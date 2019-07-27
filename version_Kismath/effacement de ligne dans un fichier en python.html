@@ -1,0 +1,3329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr" id="vbulletin_html"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!--<base href="https://www.developpez.net/forums/">--><base href="."><!--[if IE]></base><![endif]-->
+	
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://www.developpez.net/forums">
+
+<meta name="generator" content="vBulletin 4.2.2">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+	<link rel="Shortcut Icon" href="https://www.developpez.net/forums/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+
+
+	
+		<script type="text/javascript" async="" src="./effacement de ligne dans un fichier en python_files/ga.js"></script><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/yuiloader-dom-event.js"></script>
+	
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="https://forum.developpez.be/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="https://forum.developpez.be/clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'https://forum.developpez.be/clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "https://forum.developpez.be/images/misc";
+	var IMGDIR_BUTTON = "https://forum.developpez.be/images/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://www.developpez.net/forums";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=883673";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+	var AJAXBASEURL = "https://www.developpez.net/forums/";
+// -->
+</script><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/connection-min.js"></script>
+<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/vbulletin-core.js"></script>
+<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/anokha_showthread.js"></script>
+<script async="" src="./effacement de ligne dans un fichier en python_files/f.txt"></script>
+<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/ano_votes.js"></script>
+
+
+<script async="async" src="./effacement de ligne dans un fichier en python_files/gpt.js"></script>
+<script>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+</script>
+
+
+	<link rel="alternate" type="application/rss+xml" title="Forum du club des développeurs et IT Pro Flux RSS" href="https://www.developpez.net/forums/external.php?type=RSS2">
+	
+		<link rel="alternate" type="application/rss+xml" title="Forum du club des développeurs et IT Pro - Général Python - Flux RSS" href="https://www.developpez.net/forums/external.php?type=RSS2&amp;forumids=1155">
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/css.php">
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="https://www.developpez.net/forums/css.php?styleid=7&amp;langid=2&amp;d=1558107868&amp;td=ltr&amp;sheet=popupmenu-ie.css,vbulletin-ie.css,vbulletin-chrome-ie.css,vbulletin-formcontrols-ie.css,editor-ie.css" />
+	<![endif]-->
+
+	<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/gabarit-v1549891560.js"></script>
+	<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/gabarit-v1549891560.css">
+	<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/kha_blogs.css">
+
+	<!--[if lt IE 7]>
+	<script src="https://gabarit.developpez.be/ie7/IE7.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="https://gabarit.developpez.be/gabarit-ie6.css" />
+	<![endif]-->
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://gabarit.developpez.be/gabarit-ie7.css" />
+	<![endif]-->
+
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="https://gabarit.developpez.be/gabarit-ie8.css" />
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="https://gabarit.developpez.be/kit/html5_ie.js"></script>
+	<![endif]-->
+	<meta name="keywords" content="effacement,ligne,fichier,python,fichier, toutes, wfgfgd, lignes, script, dblabla, cwindows, wblabla, originel, voudrai, effacerai, comportant, merci, davance, exemple, ressemble, contienne, savoir, jaimerai, salut, ligne, python, décrire, chaîne, caractère, donné, effacement, permettrai, d,effacer, texte">
+	<meta name="description" content="salut J&#39;aimerai savoir si il est possible d&#39;écrire un script qui permettrai d,effacer dans un fichier texte toutes les lignes qui contienne une chaîne ">
+
+	<title> effacement de ligne dans un fichier en python</title>
+	<link rel="canonical" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/css(1).php">
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="https://www.developpez.net/forums/css.php?styleid=7&amp;langid=2&amp;d=1558107868&amp;td=ltr&amp;sheet=toolsmenu-ie.css,postlist-ie.css,showthread-ie.css,postbit-ie.css,poll-ie.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/css(2).php">
+
+	<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/css(3).php">
+
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://www.developpez.net/forums/css.php?styleid=7&amp;langid=2&amp;d=1558107868&amp;td=ltr&amp;sheet=projecttools-ie.css" />
+<![endif]-->
+<link rel="preload" href="./effacement de ligne dans un fichier en python_files/f(1).txt" as="script"><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/f(1).txt"></script><link rel="preload" href="./effacement de ligne dans un fichier en python_files/f(2).txt" as="script"><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/f(2).txt"></script><script src="./effacement de ligne dans un fichier en python_files/pubads_impl_2019062401.js" async=""></script></head>
+
+<body>
+
+<header>
+
+<div id="gabarit_b1">
+	<div id="gabarit-barreRecherche" style="display:none;"><form action="https://www.google.fr/" target="_blank">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-8110924381468607:6449306375">
+    <input type="hidden" name="ie" value="ISO-8859-1">
+    <input type="text" name="q" size="12">
+    <input type="submit" name="sa" value="Rechercher">
+  </div>
+</form></div>
+<div id="gabarit-new-logo" role="gabarit-accueil">
+	<a href="https://www.developpez.com/"><img src="./effacement de ligne dans un fichier en python_files/logo-dvp-h55.png" width="48" height="55"></a>
+	<a href="https://www.developpez.com/"><span class="dvp"></span></a>
+	<span class="triangle"></span>
+</div>
+<div id="gabarit_recherche"><!--<div class="gabarit-btn-menu profil" role="gabarit-profil"></div>-->
+	<div class="gabarit-btn-menu contacts" role="gabarit-contacts"></div><div class="gabarit-btn-menu recherche" role="gabarit-recherche"></div>
+</div>
+
+<div id="gabarit_superieur">
+	<nav>
+	<ul>
+		<li><a href="https://www.developpez.net/forums/" title="">Forums</a></li>
+		<li><a href="https://general.developpez.com/cours/" title="">Tutoriels</a></li>
+		<li><a href="https://magazine.developpez.com/" title="">Magazine</a></li>
+		<li><a href="https://general.developpez.com/faq/" title="">FAQ</a></li>
+		<li><a href="https://www.developpez.net/forums/blogs/" title="">Blogs</a></li>
+		<li><a href="https://chat.developpez.com/" title="">Chat</a></li>
+		<li><a href="https://www.developpez.com/newsletter/">Newsletter</a></li>
+		<li><a href="https://etudes.developpez.com/">Études</a></li>
+		<li><a href="https://emploi.developpez.com/" title="">Emploi</a></li>
+		<li><a href="https://club.developpez.com/">Club</a></li>
+	</ul>
+	</nav>
+</div></div>
+
+<nav>
+
+<div id="gabarit_mobile">
+	<div><a href="https://www.developpez.com/"><img src="./effacement de ligne dans un fichier en python_files/logo-mobile.png" alt="" height="60"></a></div>
+	<div>
+		<p>Developpez.com</p>
+		<p>Python</p>
+	</div>
+
+	<div class="nav nav-pills nav-justified" style="white-space: nowrap; width: calc(100% - 40px);">
+					<a href="https://python.developpez.com/" class="nav-item nav-link"> &nbsp;Rubrique Python&nbsp; </a>
+			<a href="https://www.developpez.net/forums/f96/autres-langages/python-zope/" class="nav-item nav-link"> &nbsp;Forum Python&nbsp; </a>
+			
+	</div>
+	
+	<div class="nav nav-pills nav-justified" style="width: calc(100% - 40px); margin: 0 auto 6px;">
+		<a href="https://www.developpez.com/" class="nav-item nav-link"><i class="glyphicon glyphicon-home" style="top:0;"></i>&nbsp; Accueil</a>
+		<a href="https://www.developpez.net/forums/" class="nav-item nav-link"><i class="glyphicon glyphicon-comment" style="top:1px;"></i>&nbsp; Forums</a>
+			
+		<span class="nav-item nav-link" style="white-space:nowrap;" data-toggle="collapse" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#gabarit_menu_mobile" role="button" aria-expanded="false"><i class="glyphicon glyphicon-th" style="top:0;"></i>&nbsp; Rubriques</span>
+	</div>
+</div>
+<div id="gabarit_mobile_fin"></div>
+
+<div class="collapse multi-collapse" id="gabarit_menu_mobile">
+	<p>Choisissez la catégorie, puis la rubrique :</p>
+	<ul>
+					<li>
+				<a href="https://www.developpez.com/" data-idrub="1" data-niv="1">Accueil</a>
+							</li>
+					<li>
+				<a href="https://alm.developpez.com/" data-idrub="42" data-niv="1">ALM</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://alm.developpez.com/" data-idrub="42" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;ALM
+							</a>
+						</li>
+													<li>
+								<a href="https://merise.developpez.com/" data-idrub="43" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Merise
+								</a>
+							</li>
+													<li>
+								<a href="https://uml.developpez.com/" data-idrub="12" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;UML
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://java.developpez.com/" data-idrub="4" data-niv="1">Java</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://java.developpez.com/" data-idrub="4" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Java
+							</a>
+						</li>
+													<li>
+								<a href="https://javaweb.developpez.com/" data-idrub="97" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Java Web
+								</a>
+							</li>
+													<li>
+								<a href="https://spring.developpez.com/" data-idrub="87" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Spring
+								</a>
+							</li>
+													<li>
+								<a href="https://android.developpez.com/" data-idrub="95" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Android
+								</a>
+							</li>
+													<li>
+								<a href="https://eclipse.developpez.com/" data-idrub="55" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Eclipse
+								</a>
+							</li>
+													<li>
+								<a href="https://netbeans.developpez.com/" data-idrub="66" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;NetBeans
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://dotnet.developpez.com/" data-idrub="20" data-niv="1">.NET</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://dotnet.developpez.com/" data-idrub="20" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Microsoft DotNET
+							</a>
+						</li>
+													<li>
+								<a href="https://visualstudio.developpez.com/" data-idrub="84" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Visual Studio
+								</a>
+							</li>
+													<li>
+								<a href="https://dotnet.developpez.com/aspnet/" data-idrub="83" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;ASP.NET
+								</a>
+							</li>
+													<li>
+								<a href="https://dotnet.developpez.com/csharp/" data-idrub="81" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;C#
+								</a>
+							</li>
+													<li>
+								<a href="https://dotnet.developpez.com/vbnet/" data-idrub="82" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;VB.NET
+								</a>
+							</li>
+													<li>
+								<a href="https://windowsphone.developpez.com/" data-idrub="105" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Windows Phone
+								</a>
+							</li>
+													<li>
+								<a href="https://windows-azure.developpez.com/" data-idrub="107" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Microsoft Azure
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://web.developpez.com/" data-idrub="8" data-niv="1">Dév. Web</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://web.developpez.com/" data-idrub="8" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Développement Web
+							</a>
+						</li>
+													<li>
+								<a href="https://ajax.developpez.com/" data-idrub="85" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;AJAX
+								</a>
+							</li>
+													<li>
+								<a href="https://apache.developpez.com/" data-idrub="71" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Apache
+								</a>
+							</li>
+													<li>
+								<a href="https://asp.developpez.com/" data-idrub="10" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;ASP
+								</a>
+							</li>
+													<li>
+								<a href="https://css.developpez.com/" data-idrub="51" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;CSS
+								</a>
+							</li>
+													<li>
+								<a href="https://dart.developpez.com/" data-idrub="125" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Dart
+								</a>
+							</li>
+													<li>
+								<a href="https://flash.developpez.com/" data-idrub="41" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Flash / Flex
+								</a>
+							</li>
+													<li>
+								<a href="https://javascript.developpez.com/" data-idrub="45" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;JavaScript
+								</a>
+							</li>
+													<li>
+								<a href="https://nodejs.developpez.com/" data-idrub="141" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;NodeJS
+								</a>
+							</li>
+													<li>
+								<a href="https://php.developpez.com/" data-idrub="9" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;PHP
+								</a>
+							</li>
+													<li>
+								<a href="https://ruby.developpez.com/" data-idrub="53" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Ruby &amp; Rails
+								</a>
+							</li>
+													<li>
+								<a href="https://typescript.developpez.com/" data-idrub="127" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;TypeScript
+								</a>
+							</li>
+													<li>
+								<a href="https://web-semantique.developpez.com/" data-idrub="111" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Web sémantique
+								</a>
+							</li>
+													<li>
+								<a href="https://webmarketing.developpez.com/" data-idrub="80" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Webmarketing
+								</a>
+							</li>
+													<li>
+								<a href="https://xhtml.developpez.com/" data-idrub="50" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;(X)HTML
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://edi.developpez.com/" data-idrub="90" data-niv="1">EDI</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://edi.developpez.com/" data-idrub="90" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;EDI
+							</a>
+						</li>
+													<li>
+								<a href="https://4d.developpez.com/" data-idrub="39" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;4D
+								</a>
+							</li>
+													<li>
+								<a href="https://delphi.developpez.com/" data-idrub="2" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Delphi
+								</a>
+							</li>
+													<li>
+								<a href="https://eclipse.developpez.com/" data-idrub="55" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Eclipse
+								</a>
+							</li>
+													<li>
+								<a href="https://jetbrains.developpez.com/" data-idrub="144" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;JetBrains
+								</a>
+							</li>
+													<li>
+								<a href="https://labview.developpez.com/" data-idrub="72" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;LabVIEW
+								</a>
+							</li>
+													<li>
+								<a href="https://netbeans.developpez.com/" data-idrub="66" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;NetBeans
+								</a>
+							</li>
+													<li>
+								<a href="https://matlab.developpez.com/" data-idrub="58" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;MATLAB
+								</a>
+							</li>
+													<li>
+								<a href="https://scilab.developpez.com/" data-idrub="120" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Scilab
+								</a>
+							</li>
+													<li>
+								<a href="https://visualstudio.developpez.com/" data-idrub="84" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Visual Studio
+								</a>
+							</li>
+													<li>
+								<a href="https://wind.developpez.com/" data-idrub="74" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;WinDev
+								</a>
+							</li>
+													<li>
+								<a href="https://vb.developpez.com/" data-idrub="5" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Visual Basic 6
+								</a>
+							</li>
+													<li>
+								<a href="https://lazarus.developpez.com/" data-idrub="96" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Lazarus
+								</a>
+							</li>
+													<li>
+								<a href="https://qt-creator.developpez.com/" data-idrub="109" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Qt Creator
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://programmation.developpez.com/" data-idrub="119" data-niv="1">Programmation</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://programmation.developpez.com/" data-idrub="119" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Programmation
+							</a>
+						</li>
+													<li>
+								<a href="https://algo.developpez.com/" data-idrub="47" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Débuter - Algorithmique
+								</a>
+							</li>
+													<li>
+								<a href="https://jeux.developpez.com/" data-idrub="38" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;2D - 3D - Jeux
+								</a>
+							</li>
+													<li>
+								<a href="https://asm.developpez.com/" data-idrub="16" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Assembleur
+								</a>
+							</li>
+													<li>
+								<a href="https://c.developpez.com/" data-idrub="3" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;C
+								</a>
+							</li>
+													<li>
+								<a href="https://cpp.developpez.com/" data-idrub="59" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;C++
+								</a>
+							</li>
+													<li>
+								<a href="https://d.developpez.com/" data-idrub="123" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;D
+								</a>
+							</li>
+													<li>
+								<a href="https://go.developpez.com/" data-idrub="124" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Go
+								</a>
+							</li>
+													<li>
+								<a href="https://kotlin.developpez.com/" data-idrub="145" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Kotlin
+								</a>
+							</li>
+													<li>
+								<a href="https://objective-c.developpez.com/" data-idrub="117" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Objective C
+								</a>
+							</li>
+													<li>
+								<a href="https://pascal.developpez.com/" data-idrub="7" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Pascal
+								</a>
+							</li>
+													<li>
+								<a href="https://perl.developpez.com/" data-idrub="29" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Perl
+								</a>
+							</li>
+													<li>
+								<a href="https://python.developpez.com/" data-idrub="27" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Python
+								</a>
+							</li>
+													<li>
+								<a href="https://rust.developpez.com/" data-idrub="137" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Rust
+								</a>
+							</li>
+													<li>
+								<a href="https://swift.developpez.com/" data-idrub="128" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Swift
+								</a>
+							</li>
+													<li>
+								<a href="https://qt.developpez.com/" data-idrub="65" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Qt
+								</a>
+							</li>
+													<li>
+								<a href="https://xml.developpez.com/" data-idrub="11" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;XML
+								</a>
+							</li>
+													<li>
+								<a href="https://general.developpez.com/cours/" data-idrub="21" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Autres
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://sgbd.developpez.com/" data-idrub="13" data-niv="1">SGBD</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://sgbd.developpez.com/" data-idrub="13" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;SGBD &amp; SQL
+							</a>
+						</li>
+													<li>
+								<a href="https://4d.developpez.com/" data-idrub="39" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;4D
+								</a>
+							</li>
+													<li>
+								<a href="https://access.developpez.com/" data-idrub="19" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Access
+								</a>
+							</li>
+													<li>
+								<a href="https://big-data.developpez.com/" data-idrub="126" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Big Data
+								</a>
+							</li>
+													<li>
+								<a href="https://db2.developpez.com/" data-idrub="36" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;DB2
+								</a>
+							</li>
+													<li>
+								<a href="https://firebird.developpez.com/" data-idrub="73" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Firebird
+								</a>
+							</li>
+													<li>
+								<a href="https://interbase.developpez.com/" data-idrub="32" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;InterBase
+								</a>
+							</li>
+													<li>
+								<a href="https://mysql.developpez.com/" data-idrub="31" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;MySQL
+								</a>
+							</li>
+													<li>
+								<a href="https://nosql.developpez.com/" data-idrub="114" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;NoSQL
+								</a>
+							</li>
+													<li>
+								<a href="https://postgresql.developpez.com/" data-idrub="33" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;PostgreSQL
+								</a>
+							</li>
+													<li>
+								<a href="https://oracle.developpez.com/" data-idrub="25" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Oracle
+								</a>
+							</li>
+													<li>
+								<a href="https://sybase.developpez.com/" data-idrub="37" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Sybase
+								</a>
+							</li>
+													<li>
+								<a href="https://sqlserver.developpez.com/" data-idrub="34" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;SQL-Server
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://office.developpez.com/" data-idrub="54" data-niv="1">Office</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://office.developpez.com/" data-idrub="54" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Microsoft Office
+							</a>
+						</li>
+													<li>
+								<a href="https://access.developpez.com/" data-idrub="19" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Access
+								</a>
+							</li>
+													<li>
+								<a href="https://excel.developpez.com/" data-idrub="75" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Excel
+								</a>
+							</li>
+													<li>
+								<a href="https://word.developpez.com/" data-idrub="76" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Word
+								</a>
+							</li>
+													<li>
+								<a href="https://outlook.developpez.com/" data-idrub="77" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Outlook
+								</a>
+							</li>
+													<li>
+								<a href="https://powerpoint.developpez.com/" data-idrub="78" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;PowerPoint
+								</a>
+							</li>
+													<li>
+								<a href="https://sharepoint.developpez.com/" data-idrub="79" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;SharePoint
+								</a>
+							</li>
+													<li>
+								<a href="https://project.developpez.com/" data-idrub="99" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Microsoft Project
+								</a>
+							</li>
+													<li>
+								<a href="https://openoffice-libreoffice.developpez.com/" data-idrub="116" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;OpenOffice &amp; LibreOffice
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://solutions-entreprise.developpez.com/" data-idrub="86" data-niv="1">Solutions d'entreprise</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://solutions-entreprise.developpez.com/" data-idrub="86" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Solutions d'entreprise
+							</a>
+						</li>
+													<li>
+								<a href="https://big-data.developpez.com/" data-idrub="126" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Big Data
+								</a>
+							</li>
+													<li>
+								<a href="https://bpm.developpez.com/" data-idrub="134" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;BPM
+								</a>
+							</li>
+													<li>
+								<a href="https://business-intelligence.developpez.com/" data-idrub="61" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Business Intelligence
+								</a>
+							</li>
+													<li>
+								<a href="https://solutions-entreprise.developpez.com/erp-pgi/presentation-erp-pgi/" data-idrub="91" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;ERP / PGI
+								</a>
+							</li>
+													<li>
+								<a href="https://crm.developpez.com/" data-idrub="92" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;CRM
+								</a>
+							</li>
+													<li>
+								<a href="https://sas.developpez.com/" data-idrub="93" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;SAS
+								</a>
+							</li>
+													<li>
+								<a href="https://cloud-computing.developpez.com/" data-idrub="103" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Cloud Computing
+								</a>
+							</li>
+													<li>
+								<a href="https://sap.developpez.com/" data-idrub="106" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;SAP
+								</a>
+							</li>
+													<li>
+								<a href="https://www.developpez.net/forums/f1664/systemes/windows/windows-serveur/biztalk-server/" data-idrub="115" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Microsoft BizTalk Server
+								</a>
+							</li>
+													<li>
+								<a href="https://talend.developpez.com/" data-idrub="118" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Talend
+								</a>
+							</li>
+													<li>
+								<a href="https://ibmcloud.developpez.com/" data-idrub="135" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;IBM Cloud
+								</a>
+							</li>
+													<li>
+								<a href="https://intelligence-artificielle.developpez.com/" data-idrub="143" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Intelligence artificielle
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://applications.developpez.com/" data-idrub="88" data-niv="1">Applications</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://applications.developpez.com/" data-idrub="88" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Applications
+							</a>
+						</li>
+													<li>
+								<a href="https://open-source.developpez.com/" data-idrub="121" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Libres &amp; Open Source
+								</a>
+							</li>
+													<li>
+								<a href="https://openoffice-libreoffice.developpez.com/" data-idrub="116" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;OpenOffice &amp; LibreOffice
+								</a>
+							</li>
+													<li>
+								<a href="https://portail-projets.developpez.com/" data-idrub="98" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Projets
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://mobiles.developpez.com/" data-idrub="94" data-niv="1">Mobiles</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://mobiles.developpez.com/" data-idrub="94" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Mobiles
+							</a>
+						</li>
+													<li>
+								<a href="https://android.developpez.com/" data-idrub="95" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Android
+								</a>
+							</li>
+													<li>
+								<a href="https://ios.developpez.com/" data-idrub="101" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;iOS
+								</a>
+							</li>
+													<li>
+								<a href="https://windowsphone.developpez.com/" data-idrub="105" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Windows Phone
+								</a>
+							</li>
+											</ul>
+							</li>
+					<li>
+				<a href="https://systeme.developpez.com/" data-idrub="30" data-niv="1">Systèmes</a>
+									<ul class="gabarit_sousmenu">
+						<li>
+							<a href="https://systeme.developpez.com/" data-idrub="30" data-niv="2">
+								<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Systèmes
+							</a>
+						</li>
+													<li>
+								<a href="https://windows.developpez.com/" data-idrub="17" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Windows
+								</a>
+							</li>
+													<li>
+								<a href="https://linux.developpez.com/" data-idrub="18" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Linux
+								</a>
+							</li>
+													<li>
+								<a href="https://arduino.developpez.com/" data-idrub="142" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Arduino
+								</a>
+							</li>
+													<li>
+								<a href="https://securite.developpez.com/" data-idrub="40" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Sécurité
+								</a>
+							</li>
+													<li>
+								<a href="https://hardware.developpez.com/" data-idrub="64" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Hardware
+								</a>
+							</li>
+													<li>
+								<a href="https://hpc.developpez.com/" data-idrub="139" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;HPC
+								</a>
+							</li>
+													<li>
+								<a href="https://mac.developpez.com/" data-idrub="57" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Mac
+								</a>
+							</li>
+													<li>
+								<a href="https://raspberry-pi.developpez.com/" data-idrub="131" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Raspberry Pi
+								</a>
+							</li>
+													<li>
+								<a href="https://reseau.developpez.com/" data-idrub="70" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Réseau
+								</a>
+							</li>
+													<li>
+								<a href="https://green-it.developpez.com/" data-idrub="104" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Green IT
+								</a>
+							</li>
+													<li>
+								<a href="https://embarque.developpez.com/" data-idrub="110" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Systèmes embarqués
+								</a>
+							</li>
+													<li>
+								<a href="https://virtualisation.developpez.com/" data-idrub="108" data-niv="2">
+									<span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;Virtualisation
+								</a>
+							</li>
+											</ul>
+							</li>
+			</ul>
+</div>
+
+<ul id="gabarit_menu" style="padding-left:56px;">
+	<li><a href="https://www.developpez.com/" data-idrub="1" data-niv="1" style="padding:0;"><div id="gabarit_home"></div></a>
+			</li>
+	<li><a href="https://alm.developpez.com/" data-idrub="42" data-niv="1">ALM<!--<span class="gabarit_tooltip">Cycle de vie du logiciel</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://alm.developpez.com/" data-idrub="42" data-niv="2">ALM</a></li>
+				<li><a href="https://merise.developpez.com/" data-idrub="43" data-niv="2">Merise</a></li>
+				<li><a href="https://uml.developpez.com/" data-idrub="12" data-niv="2">UML</a></li>
+			</ul></li>
+	<li><a href="https://java.developpez.com/" data-idrub="4" data-niv="1">Java<!--<span class="gabarit_tooltip">Plateforme et langage Java</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://java.developpez.com/" data-idrub="4" data-niv="2">Java</a></li>
+				<li><a href="https://javaweb.developpez.com/" data-idrub="97" data-niv="2">Java Web</a></li>
+				<li><a href="https://spring.developpez.com/" data-idrub="87" data-niv="2">Spring</a></li>
+				<li><a href="https://android.developpez.com/" data-idrub="95" data-niv="2">Android</a></li>
+				<li><a href="https://eclipse.developpez.com/" data-idrub="55" data-niv="2">Eclipse</a></li>
+				<li><a href="https://netbeans.developpez.com/" data-idrub="66" data-niv="2">NetBeans</a></li>
+			</ul></li>
+	<li><a href="https://dotnet.developpez.com/" data-idrub="20" data-niv="1">.NET<!--<span class="gabarit_tooltip">Microsoft Framework .NET</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://dotnet.developpez.com/" data-idrub="20" data-niv="2">Microsoft DotNET</a></li>
+				<li><a href="https://visualstudio.developpez.com/" data-idrub="84" data-niv="2">Visual Studio</a></li>
+				<li><a href="https://dotnet.developpez.com/aspnet/" data-idrub="83" data-niv="2">ASP.NET</a></li>
+				<li><a href="https://dotnet.developpez.com/csharp/" data-idrub="81" data-niv="2">C#</a></li>
+				<li><a href="https://dotnet.developpez.com/vbnet/" data-idrub="82" data-niv="2">VB.NET</a></li>
+				<li><a href="https://windowsphone.developpez.com/" data-idrub="105" data-niv="2">Windows Phone</a></li>
+				<li><a href="https://windows-azure.developpez.com/" data-idrub="107" data-niv="2">Microsoft Azure</a></li>
+			</ul></li>
+	<li><a href="https://web.developpez.com/" data-idrub="8" data-niv="1">Dév. Web<!--<span class="gabarit_tooltip">Développement Web et Webmarketing</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://web.developpez.com/" data-idrub="8" data-niv="2">Développement Web</a></li>
+				<li><a href="https://ajax.developpez.com/" data-idrub="85" data-niv="2">AJAX</a></li>
+				<li><a href="https://apache.developpez.com/" data-idrub="71" data-niv="2">Apache</a></li>
+				<li><a href="https://asp.developpez.com/" data-idrub="10" data-niv="2">ASP</a></li>
+				<li><a href="https://css.developpez.com/" data-idrub="51" data-niv="2">CSS</a></li>
+				<li><a href="https://dart.developpez.com/" data-idrub="125" data-niv="2">Dart</a></li>
+				<li><a href="https://flash.developpez.com/" data-idrub="41" data-niv="2">Flash / Flex</a></li>
+				<li><a href="https://javascript.developpez.com/" data-idrub="45" data-niv="2">JavaScript</a></li>
+				<li><a href="https://nodejs.developpez.com/" data-idrub="141" data-niv="2">NodeJS</a></li>
+				<li><a href="https://php.developpez.com/" data-idrub="9" data-niv="2">PHP</a></li>
+				<li><a href="https://ruby.developpez.com/" data-idrub="53" data-niv="2">Ruby &amp; Rails</a></li>
+				<li><a href="https://typescript.developpez.com/" data-idrub="127" data-niv="2">TypeScript</a></li>
+				<li><a href="https://web-semantique.developpez.com/" data-idrub="111" data-niv="2">Web sémantique</a></li>
+				<li><a href="https://webmarketing.developpez.com/" data-idrub="80" data-niv="2">Webmarketing</a></li>
+				<li><a href="https://xhtml.developpez.com/" data-idrub="50" data-niv="2">(X)HTML</a></li>
+			</ul></li>
+	<li><a href="https://edi.developpez.com/" data-idrub="90" data-niv="1">EDI<!--<span class="gabarit_tooltip">Environnements de Développement Intégré</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://edi.developpez.com/" data-idrub="90" data-niv="2">EDI</a></li>
+				<li><a href="https://4d.developpez.com/" data-idrub="39" data-niv="2">4D</a></li>
+				<li><a href="https://delphi.developpez.com/" data-idrub="2" data-niv="2">Delphi</a></li>
+				<li><a href="https://eclipse.developpez.com/" data-idrub="55" data-niv="2">Eclipse</a></li>
+				<li><a href="https://jetbrains.developpez.com/" data-idrub="144" data-niv="2">JetBrains</a></li>
+				<li><a href="https://labview.developpez.com/" data-idrub="72" data-niv="2">LabVIEW</a></li>
+				<li><a href="https://netbeans.developpez.com/" data-idrub="66" data-niv="2">NetBeans</a></li>
+				<li><a href="https://matlab.developpez.com/" data-idrub="58" data-niv="2">MATLAB</a></li>
+				<li><a href="https://scilab.developpez.com/" data-idrub="120" data-niv="2">Scilab</a></li>
+				<li><a href="https://visualstudio.developpez.com/" data-idrub="84" data-niv="2">Visual Studio</a></li>
+				<li><a href="https://wind.developpez.com/" data-idrub="74" data-niv="2">WinDev</a></li>
+				<li><a href="https://vb.developpez.com/" data-idrub="5" data-niv="2">Visual Basic 6</a></li>
+				<li><a href="https://lazarus.developpez.com/" data-idrub="96" data-niv="2">Lazarus</a></li>
+				<li><a href="https://qt-creator.developpez.com/" data-idrub="109" data-niv="2">Qt Creator</a></li>
+			</ul></li>
+	<li><a href="https://programmation.developpez.com/" data-idrub="119" data-niv="1" class="gabarit_selection">Programmation<!--<span class="gabarit_tooltip">Programmation et langages de programmation applicatifs</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://programmation.developpez.com/" data-idrub="119" data-niv="2">Programmation</a></li>
+				<li><a href="https://algo.developpez.com/" data-idrub="47" data-niv="2">Débuter - Algorithmique</a></li>
+				<li><a href="https://jeux.developpez.com/" data-idrub="38" data-niv="2">2D - 3D - Jeux</a></li>
+				<li><a href="https://asm.developpez.com/" data-idrub="16" data-niv="2">Assembleur</a></li>
+				<li><a href="https://c.developpez.com/" data-idrub="3" data-niv="2">C</a></li>
+				<li><a href="https://cpp.developpez.com/" data-idrub="59" data-niv="2">C++</a></li>
+				<li><a href="https://d.developpez.com/" data-idrub="123" data-niv="2">D</a></li>
+				<li><a href="https://go.developpez.com/" data-idrub="124" data-niv="2">Go</a></li>
+				<li><a href="https://kotlin.developpez.com/" data-idrub="145" data-niv="2">Kotlin</a></li>
+				<li><a href="https://objective-c.developpez.com/" data-idrub="117" data-niv="2">Objective C</a></li>
+				<li><a href="https://pascal.developpez.com/" data-idrub="7" data-niv="2">Pascal</a></li>
+				<li><a href="https://perl.developpez.com/" data-idrub="29" data-niv="2">Perl</a></li>
+				<li><a href="https://python.developpez.com/" data-idrub="27" data-niv="2">Python</a></li>
+				<li><a href="https://rust.developpez.com/" data-idrub="137" data-niv="2">Rust</a></li>
+				<li><a href="https://swift.developpez.com/" data-idrub="128" data-niv="2">Swift</a></li>
+				<li><a href="https://qt.developpez.com/" data-idrub="65" data-niv="2">Qt</a></li>
+				<li><a href="https://xml.developpez.com/" data-idrub="11" data-niv="2">XML</a></li>
+				<li><a href="https://general.developpez.com/cours/" data-idrub="21" data-niv="2">Autres</a></li>
+			</ul></li>
+	<li><a href="https://sgbd.developpez.com/" data-idrub="13" data-niv="1">SGBD<!--<span class="gabarit_tooltip">Systèmes de Gestion de Bases de Données</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://sgbd.developpez.com/" data-idrub="13" data-niv="2">SGBD &amp; SQL</a></li>
+				<li><a href="https://4d.developpez.com/" data-idrub="39" data-niv="2">4D</a></li>
+				<li><a href="https://access.developpez.com/" data-idrub="19" data-niv="2">Access</a></li>
+				<li><a href="https://big-data.developpez.com/" data-idrub="126" data-niv="2">Big Data</a></li>
+				<li><a href="https://db2.developpez.com/" data-idrub="36" data-niv="2">DB2</a></li>
+				<li><a href="https://firebird.developpez.com/" data-idrub="73" data-niv="2">Firebird</a></li>
+				<li><a href="https://interbase.developpez.com/" data-idrub="32" data-niv="2">InterBase</a></li>
+				<li><a href="https://mysql.developpez.com/" data-idrub="31" data-niv="2">MySQL</a></li>
+				<li><a href="https://nosql.developpez.com/" data-idrub="114" data-niv="2">NoSQL</a></li>
+				<li><a href="https://postgresql.developpez.com/" data-idrub="33" data-niv="2">PostgreSQL</a></li>
+				<li><a href="https://oracle.developpez.com/" data-idrub="25" data-niv="2">Oracle</a></li>
+				<li><a href="https://sybase.developpez.com/" data-idrub="37" data-niv="2">Sybase</a></li>
+				<li><a href="https://sqlserver.developpez.com/" data-idrub="34" data-niv="2">SQL-Server</a></li>
+			</ul></li>
+	<li><a href="https://office.developpez.com/" data-idrub="54" data-niv="1">Office<!--<span class="gabarit_tooltip">Bureautique pour l'entreprise</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://office.developpez.com/" data-idrub="54" data-niv="2">Microsoft Office</a></li>
+				<li><a href="https://access.developpez.com/" data-idrub="19" data-niv="2">Access</a></li>
+				<li><a href="https://excel.developpez.com/" data-idrub="75" data-niv="2">Excel</a></li>
+				<li><a href="https://word.developpez.com/" data-idrub="76" data-niv="2">Word</a></li>
+				<li><a href="https://outlook.developpez.com/" data-idrub="77" data-niv="2">Outlook</a></li>
+				<li><a href="https://powerpoint.developpez.com/" data-idrub="78" data-niv="2">PowerPoint</a></li>
+				<li><a href="https://sharepoint.developpez.com/" data-idrub="79" data-niv="2">SharePoint</a></li>
+				<li><a href="https://project.developpez.com/" data-idrub="99" data-niv="2">Microsoft Project</a></li>
+				<li><a href="https://openoffice-libreoffice.developpez.com/" data-idrub="116" data-niv="2">OpenOffice &amp; LibreOffice</a></li>
+			</ul></li>
+	<li><a href="https://solutions-entreprise.developpez.com/" data-idrub="86" data-niv="1">Solutions d'entreprise<!--<span class="gabarit_tooltip">Autres logiciels pour l'entreprise</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://solutions-entreprise.developpez.com/" data-idrub="86" data-niv="2">Solutions d'entreprise</a></li>
+				<li><a href="https://big-data.developpez.com/" data-idrub="126" data-niv="2">Big Data</a></li>
+				<li><a href="https://bpm.developpez.com/" data-idrub="134" data-niv="2">BPM</a></li>
+				<li><a href="https://business-intelligence.developpez.com/" data-idrub="61" data-niv="2">Business Intelligence</a></li>
+				<li><a href="https://solutions-entreprise.developpez.com/erp-pgi/presentation-erp-pgi/" data-idrub="91" data-niv="2">ERP / PGI</a></li>
+				<li><a href="https://crm.developpez.com/" data-idrub="92" data-niv="2">CRM</a></li>
+				<li><a href="https://sas.developpez.com/" data-idrub="93" data-niv="2">SAS</a></li>
+				<li><a href="https://cloud-computing.developpez.com/" data-idrub="103" data-niv="2">Cloud Computing</a></li>
+				<li><a href="https://sap.developpez.com/" data-idrub="106" data-niv="2">SAP</a></li>
+				<li><a href="https://www.developpez.net/forums/f1664/systemes/windows/windows-serveur/biztalk-server/" data-idrub="115" data-niv="2">Microsoft BizTalk Server</a></li>
+				<li><a href="https://talend.developpez.com/" data-idrub="118" data-niv="2">Talend</a></li>
+				<li><a href="https://ibmcloud.developpez.com/" data-idrub="135" data-niv="2">IBM Cloud</a></li>
+				<li><a href="https://intelligence-artificielle.developpez.com/" data-idrub="143" data-niv="2">Intelligence artificielle</a></li>
+			</ul></li>
+	<li><a href="https://applications.developpez.com/" data-idrub="88" data-niv="1">Applications<!--<span class="gabarit_tooltip">Applications logicielles</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://applications.developpez.com/" data-idrub="88" data-niv="2">Applications</a></li>
+				<li><a href="https://open-source.developpez.com/" data-idrub="121" data-niv="2">Libres &amp; Open Source</a></li>
+				<li><a href="https://openoffice-libreoffice.developpez.com/" data-idrub="116" data-niv="2">OpenOffice &amp; LibreOffice</a></li>
+				<li><a href="https://portail-projets.developpez.com/" data-idrub="98" data-niv="2">Projets</a></li>
+			</ul></li>
+	<li><a href="https://mobiles.developpez.com/" data-idrub="94" data-niv="1">Mobiles<!--<span class="gabarit_tooltip">Logiciels et matériels mobiles</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://mobiles.developpez.com/" data-idrub="94" data-niv="2">Mobiles</a></li>
+				<li><a href="https://android.developpez.com/" data-idrub="95" data-niv="2">Android</a></li>
+				<li><a href="https://ios.developpez.com/" data-idrub="101" data-niv="2">iOS</a></li>
+				<li><a href="https://windowsphone.developpez.com/" data-idrub="105" data-niv="2">Windows Phone</a></li>
+			</ul></li>
+	<li><a href="https://systeme.developpez.com/" data-idrub="30" data-niv="1">Systèmes<!--<span class="gabarit_tooltip">Logiciels et matériels systèmes</span>--></a>
+			<ul class="gabarit_sousmenu">
+				<li><a href="https://systeme.developpez.com/" data-idrub="30" data-niv="2">Systèmes</a></li>
+				<li><a href="https://windows.developpez.com/" data-idrub="17" data-niv="2">Windows</a></li>
+				<li><a href="https://linux.developpez.com/" data-idrub="18" data-niv="2">Linux</a></li>
+				<li><a href="https://arduino.developpez.com/" data-idrub="142" data-niv="2">Arduino</a></li>
+				<li><a href="https://securite.developpez.com/" data-idrub="40" data-niv="2">Sécurité</a></li>
+				<li><a href="https://hardware.developpez.com/" data-idrub="64" data-niv="2">Hardware</a></li>
+				<li><a href="https://hpc.developpez.com/" data-idrub="139" data-niv="2">HPC</a></li>
+				<li><a href="https://mac.developpez.com/" data-idrub="57" data-niv="2">Mac</a></li>
+				<li><a href="https://raspberry-pi.developpez.com/" data-idrub="131" data-niv="2">Raspberry Pi</a></li>
+				<li><a href="https://reseau.developpez.com/" data-idrub="70" data-niv="2">Réseau</a></li>
+				<li><a href="https://green-it.developpez.com/" data-idrub="104" data-niv="2">Green IT</a></li>
+				<li><a href="https://embarque.developpez.com/" data-idrub="110" data-niv="2">Systèmes embarqués</a></li>
+				<li><a href="https://virtualisation.developpez.com/" data-idrub="108" data-niv="2">Virtualisation</a></li>
+			</ul></li>
+</ul>
+
+<ul id="gabarit_barre1"><li><a href="https://programmation.developpez.com/">Programmation</a></li><li><a href="https://algo.developpez.com/">Algorithmique</a></li><li><a href="https://jeux.developpez.com/">2D-3D-Jeux</a></li><li><a href="https://asm.developpez.com/">Assembleur</a></li><li><a href="https://c.developpez.com/">C</a></li><li><a href="https://cpp.developpez.com/">C++</a></li><li><a href="https://d.developpez.com/">D</a></li><li><a href="https://go.developpez.com/">Go</a></li><li><a href="https://kotlin.developpez.com/">Kotlin</a></li><li><a href="https://objective-c.developpez.com/">Objective C</a></li><li><a href="https://pascal.developpez.com/">Pascal</a></li><li><a href="https://perl.developpez.com/">Perl</a></li><li class="gabarit_selection"><a href="https://python.developpez.com/">Python</a></li><li><a href="https://rust.developpez.com/">Rust</a></li><li><a href="https://swift.developpez.com/">Swift</a></li><li><a href="https://qt.developpez.com/">Qt</a></li><li><a href="https://xml.developpez.com/">XML</a></li><li><a href="https://general.developpez.com/cours/">Autres</a></li></ul>
+
+<div id="gabarit_barre2">
+	<a rel="nofollow" class="gabarit_social gabarit_facebook" href="http://www.facebook.com/pages/Python/109302299105907" target="_blank" title="Retrouver Developpez sur Facebook"></a>
+	<a rel="nofollow" class="gabarit_social gabarit_twitter" href="https://twitter.com/PythonDVP" target="_blank" title="Retrouver Developpez sur Twitter"></a>
+	<a class="gabarit_social gabarit_rss" href="http://python.developpez.com/index/rss" target="_blank" title="Flux RSS"></a>
+	<ul>
+<li><a href="https://www.developpez.net/forums/f96/autres-langages/python-zope/">FORUM PYTHON</a></li><li><a href="https://python.developpez.com/faq/">F.A.Q PYTHON</a></li><li><a href="https://python.developpez.com/cours/">TUTORIELS PYTHON</a></li><li><a href="https://python.developpez.com/sources/">SOURCES PYTHON</a></li><li><a href="https://python.developpez.com/telecharger/index/categorie/34/Outils-Python">OUTILS PYTHON</a></li><li><a href="https://python.developpez.com/livres/">LIVRES PYTHON</a></li><li><a href="http://pyqt.developpez.com/">PyQt</a></li>	</ul>
+</div>
+
+</nav>
+</header>
+<section>
+
+<div id="gabarit_pubBB">
+<div id="gabarit_pub0"></div><div id="vj27om0k" class="dvpb0" style="display: inline-block; width: 728px; height: 90px"><style type="text/css">html, body { margin: 0; padding: 0; }</style><iframe src="./effacement de ligne dans un fichier en python_files/show_i(3).html" width="728" height="90" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe><style type="text/css"> #gabarit_pub0 { display: inline-block; }</style></div>
+</div>
+
+<div class="contenuPage">
+
+<style type="text/css">
+	.body_wrapper { width: calc(100% - 214px) !important; }
+	#ano_colonne_droite { position: absolute; right: 20px; top: 415px; width: 160px; display: none; }
+	#ano_colonne_liens { background-color: #293a4e; border: 3px solid #293a4e; border-radius: .25rem .25rem 0 0; -webkit-border-radius: .25rem .25rem 0 0; padding-top: 20px; margin-bottom: 1rem; }
+	#ano_colonne_contenu { background: #fff; }
+	#ano_colonne_droite p { color: #5a7f97; text-align: center; padding: 4px 0.2rem; }
+	#ano_colonne_droite p:first-child { padding-top:16px; }
+	#ano_colonne_droite p:last-child { padding-bottom:16px; }
+	#ano_colonne_titre { background: none !important; height: 21px; line-height: 21px; position: absolute; top: 0; left: 0; width: 160px; color: #fff !important; padding: 0 !important; margin: 0; text-align:center !important; font-size:.8rem; text-shadow: 1px 1px 0px #385263; }
+</style>
+<div id="ano_colonne_droite" style="top: 268px; display: block;">
+<div id="ano_colonne_liens">
+<div id="ano_colonne_titre">Navigation</div>
+<div id="ano_colonne_contenu">
+<p style="padding-top:10px; padding-bottom:0;"><b>Inscrivez-vous gratuitement</b><br>pour pouvoir participer, suivre les réponses en temps réel, voter pour les messages, poser vos propres questions et recevoir la newsletter<br><br>
+<a href="https://www.developpez.net/forums/inscription/">
+<img src="./effacement de ligne dans un fichier en python_files/inscris-bkgnone.png">
+</a></p></div></div><div id="ee27rd4q" class="dvpb4" style="display: inline-block; width: 160px; height: 600px"><style type="text/css">html, body { margin: 0; padding: 0; }</style><iframe src="./effacement de ligne dans un fichier en python_files/show_i(4).html" width="160" height="600" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe><style type="text/css"> #gabarit_pub4 { display: block; }</style></div><div id="gabarit_pub4"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+	var bloc = $("#ano_colonne_droite");
+	var intr = false;
+	var y = $("#breadcrumb").offset().top;
+	bloc.css("top", y + "px").show();
+
+	$(window).on("scroll", function() {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+		if (scrollTop < y) {
+			if (intr) {
+				bloc.css("position", "");
+				bloc.css("top", y + "px");
+				intr = false;
+			}
+		} else {
+			if (! intr) {
+				bloc.css("position", "fixed");
+				bloc.css("top", "5px");
+				intr = true;
+			}
+		}
+	});
+});
+</script>
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+<div id="header" class="floatcontainer doc_header">
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="https://www.developpez.net/forums/inscription/" rel="nofollow">S'inscrire</a></li>
+			
+				<li><a rel="help" href="https://www.developpez.net/forums/faq.php">Aide</a></li>
+				<li>
+			<script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/vbulletin_md5.js"></script>
+			<form id="navbar_loginform" action="https://www.developpez.net/forums/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+					<div>
+						<div>
+					<input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="Identifiant">
+					<input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" style="display: none;">
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="Mot de passe" style="display: inline;">
+					<input type="hidden" name="cookieuser" value="1">
+					<input type="submit" class="loginbutton" tabindex="104" value="S&#39;identifier" title="Insérez votre identifiant et mot de passe dans les cases correspondantes pour vous connecter, ou cliquez sur le bouton « S&#39;inscrire » pour créer un profil personnel." accesskey="s">
+						</div>
+					</div>
+				</fieldset>
+
+				<input type="hidden" name="s" value="">
+				<input type="hidden" name="securitytoken" value="guest">
+				<input type="hidden" name="do" value="login">
+				<input type="hidden" name="vb_login_md5password">
+				<input type="hidden" name="vb_login_md5password_utf">
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'Identifiant')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='Identifiant';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+				</li>
+				
+			</ul>
+		
+	</div>
+	<div class="ad_global_header">
+		
+		
+	</div>
+	<hr>
+</div>
+<div id="navbar" class="navbar">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li id="vbtab_whatsnew">
+			<a class="navtab" href="https://www.developpez.net/forums/activity.php">Quoi de neuf ?</a>
+		</li>
+		
+		
+
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="http://www.developpez.net/forums/">Forum</a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl" id="yui-gen1">Actions</a>
+							<ul class="popupbody" id="yui-gen0">
+								
+									<li id="vbalink_mfr"><a rel="nofollow" href="https://www.developpez.net/forums/forumdisplay.php?do=markread&amp;markreadhash=guest">Marquer les forums comme lus</a></li>
+								
+									<li id="link_mtg4_835"><a href="http://www.developpez.net/forums/project.php">Bugs &amp; Suggestions</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_community">
+							<a href="javascript://" class="popupctrl" id="yui-gen3">Réseau social</a>
+							<ul class="popupbody" id="yui-gen2">
+								
+									<li id="vbclink_groups"><a href="https://www.developpez.net/forums/group.php">Groupes</a></li>
+								
+									<li id="vbflink_faq"><a href="https://www.developpez.net/forums/faq.php">FAQ forum</a></li>
+								
+									<li id="vbclink_members"><a href="https://www.developpez.net/forums/memberlist.php">Liste des utilisateurs</a></li>
+								
+									<li id="vbqlink_leaders"><a href="https://www.developpez.net/forums/showgroups.php">Voir l'équipe du site</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_nde2_515"><a href="http://www.developpez.net/forums/blogs/">Blogs</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_calendar"><a href="https://www.developpez.net/forums/agenda/">Agenda</a></li>
+						
+					
+				
+					
+						
+							<li id="link_nta3_958"><a target="_blank" href="http://club.developpez.com/regles/">Règles</a></li>
+						
+					
+				
+			</ul>
+		
+
+	
+		<li id="vbtab_blog">
+			<a class="navtab" href="https://www.developpez.net/forums/blogs/">Blogs</a>
+		</li>
+		
+		
+
+	
+		<li id="vbtab_project">
+			<a class="navtab" href="https://www.developpez.net/forums/project.php">Projets</a>
+		</li>
+		
+		
+
+		
+	</ul>
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="https://www.developpez.net/forums/search.php?do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest">
+				<input type="hidden" name="do" value="process">
+				<span class="textboxcontainer"><span><input type="text" value="" name="query" class="textbox" tabindex="99"></span></span>
+				<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="./effacement de ligne dans un fichier en python_files/search.png" name="submit" onclick="document.getElementById(&#39;navbar_search&#39;).submit;" tabindex="100"></span></span>
+			</form>
+			<ul class="navbar_advanced_search">
+				<li><a href="https://www.developpez.net/forums/search.php" accesskey="4">Recherche avancée</a></li>
+				
+			</ul>
+		</div>
+	
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="https://www.developpez.net/forums/" accesskey="1"><img src="./effacement de ligne dans un fichier en python_files/navbit-home2.png" width="12" height="12" alt="Accueil" title="Accueil"></a></li>
+		
+	<li class="navbit"><a href="https://www.developpez.net/forums/">Index du forum</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f2/autres-langages/">Autres langages</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f96/autres-langages/python-zope/">Python &amp; Zope</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f1155/autres-langages/python-zope/general-python/">Général Python</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> effacement de ligne dans un fichier en python</span></li>
+
+	</ul>
+	<hr>
+</div>
+
+
+
+
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+			<a rel="nofollow" href="https://www.developpez.net/forums/newreply.php?p=5033718&amp;noquote=1" class="newcontent_textcontrol" id="newreplylink_top"><span>+</span> Répondre à la discussion</a>
+			<img style="display:none" id="progress_newreplylink_top" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+
+		
+		<div id="pagination_top" class="pagination_top">
+		
+
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			Discussion: <span class="threadtitle"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/" title="Recharger cette page">effacement de ligne dans un fichier en python</a> <img src="./effacement de ligne dans un fichier en python_files/icone-resolu.png" title="Question résolue" alt=""> </span>
+		</h1>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://" id="yui-gen5">Outils de la discussion</a></h6>
+				<ul class="popupbody" id="yui-gen4">
+					<li><a href="https://www.developpez.net/forums/i883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/" accesskey="3" rel="nofollow">Afficher une version imprimable</a></li>
+					
+					<li>
+						
+							<a href="https://www.developpez.net/forums/subscription.php?do=addsubscription&amp;t=883673" rel="nofollow">S'abonner à cette discussion…</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+
+			
+
+			
+				<li class="popupmenu" id="displaymodes">
+					<h6><a class="popupctrl" href="javascript://" id="yui-gen7">Affichage</a></h6>
+					<ul class="popupbody" id="yui-gen6">
+						<li><label>Mode linéaire</label></li>
+						<li><a rel="nofollow" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/?mode=hybrid"> Choisir le mode hybride</a></li>
+						<li><a rel="nofollow" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/?mode=threaded#post5023305"> Choisir le mode arborescent</a></li>
+					</ul>
+				</li>
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023305">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">18h33</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023305" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023305" class="postcounter">#1</a><a id="postcount5023305" name="1"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen8">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u269281/reillyc/" title="reillyc est déconnecté"><strong>reillyc</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="reillyc est déconnecté" border="0" title="reillyc est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre à l'essai
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/nv-barre-5.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/269281/reillyc"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>Étudiant</div><dt>Inscrit en</dt><dd>novembre 2008</dd><dt>Messages</dt><dd>37</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="269281" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="269281"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations professionnelles :</b></div><div>Activité : Étudiant</div><div>Secteur : High Tech - Produits et services télécom et Internet</div><div><br><b>Informations forums :</b></div><div>Inscription : novembre 2008</div><div>Messages : 37</div><div>Points : 20</div></div></div><dt>Points</dt><dd><span role="points" userid="269281" style="cursor: pointer;">20</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> effacement de ligne dans un fichier en python
+				</h2>
+				
+
+
+						
+							
+							
+						
+						
+				<div class="content">
+					<div id="post_message_5023305">
+						<blockquote class="postcontent restore ">
+							salut<br>
+J'aimerai savoir si il est possible d'écrire un script qui permettrai d,effacer dans un fichier texte toutes les lignes qui contienne une chaîne de caractère donné.<br>
+par exemple mon fichier originel:<br>
+<br>
+w:\blabla <br>
+d:\blabla<br>
+c:\windows<br>
+w:\fgfgd<br>
+<br>
+Je voudrai qu'à la fin le fichier ressemble à ça:<br>
+<br>
+w:\blabla <br>
+d:\blabla<br>
+w:\fgfgd<br>
+<br>
+Le script effacerai toutes les lignes comportant c:\windows<br>
+<br>
+merci d'avance
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023305" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023305" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023305" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023305" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023305"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023305"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023340">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">18h48</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023340" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023340" class="postcounter">#2</a><a id="postcount5023340" name="2"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen9">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u207704/kango/" title="kango est déconnecté"><strong>kango</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="kango est déconnecté" border="0" title="kango est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre éprouvé
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-2-5.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">  <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"> <a href="https://www.developpez.com/user/profil/207704/kango"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><dt>Inscrit en</dt><dd>décembre 2007</dd><dt>Messages</dt><dd>758</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="207704" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="207704"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Sexe : <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"></div><div>Âge : 40</div><div>Localisation : France</div><div><br><b>Informations professionnelles :</b></div><div>Secteur : Aéronautique - Marine - Espace - Armement</div><div><br><b>Informations forums :</b></div><div>Inscription : décembre 2007</div><div>Messages : 758</div><div>Points : 970</div></div></div><dt>Points</dt><dd><span role="points" userid="207704" style="cursor: pointer;">970</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5023340">
+						<blockquote class="postcontent restore ">
+							bonjour<br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:36px;">J<span style="color: #FF0000;">'aimerai savoir si il est possible d'</span>écrire un script qui permettrai d,effacer dans un fichier texte toutes les lignes qui contienne une chaîne de caractère donné.</pre>
+</div>oui c'est possible.<br>
+<br>
+on peut faire la lecture du fichier et écrire ce que l'on souhaite garder dans un autre, puis donner à cet autre fichier le nom du premier après l'avoir effacé.<br>
+<br>
+à ma connaissance, il n'est pas possible de procéder à un changement directement dans le fichier sans passer par un fichier intermédiaire.
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023340" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023340" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023340" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023340" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023340"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023340"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023357">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">18h58</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023357" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023357" class="postcounter">#3</a><a id="postcount5023357" name="3"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen10">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u193329/n-tox/" title="N.tox est déconnecté"><strong>N.tox</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="N.tox est déconnecté" border="0" title="N.tox est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre éclairé
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-2-0.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">  <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"> <a href="https://www.developpez.com/user/profil/193329/N-tox"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>heu...</div><dt>Inscrit en</dt><dd>octobre 2007</dd><dt>Messages</dt><dd>648</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="193329" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="193329"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Sexe : <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"></div><div>Localisation : France, Essonne (Île de France)</div><div><br><b>Informations professionnelles :</b></div><div>Activité : heu...</div><div><br><b>Informations forums :</b></div><div>Inscription : octobre 2007</div><div>Messages : 648</div><div>Points : 773</div></div></div><dt>Points</dt><dd><span role="points" userid="193329" style="cursor: pointer;">773</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5023357">
+						<blockquote class="postcontent restore ">
+							c'est possible, mais c'est affreusement chiant... faut jouer avec seek(), tell(), write(), len() et truncate() (hormis len(), toutes des méthode d'objets ficher)<br>
+<br>
+<a rel="nofollow" href="http://docs.python.org/library/stdtypes.html#bltin-file-objects" target="_blank">http://docs.python.org/library/stdty...n-file-objects</a><br>
+<br>
+Bon courage <img src="./effacement de ligne dans un fichier en python_files/toine.gif" border="0" alt="" title=":mouarf:" class="inlineimg">
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023357" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023357" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023357" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023357" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023357"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023357"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023410">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">19h23</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023410" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023410" class="postcounter">#4</a><a id="postcount5023410" name="4"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen11">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u269281/reillyc/" title="reillyc est déconnecté"><strong>reillyc</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="reillyc est déconnecté" border="0" title="reillyc est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre à l'essai
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/nv-barre-5.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/269281/reillyc"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>Étudiant</div><dt>Inscrit en</dt><dd>novembre 2008</dd><dt>Messages</dt><dd>37</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="269281" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="269281"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations professionnelles :</b></div><div>Activité : Étudiant</div><div>Secteur : High Tech - Produits et services télécom et Internet</div><div><br><b>Informations forums :</b></div><div>Inscription : novembre 2008</div><div>Messages : 37</div><div>Points : 20</div></div></div><dt>Points</dt><dd><span role="points" userid="269281" style="cursor: pointer;">20</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5023410">
+						<blockquote class="postcontent restore ">
+							<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:204px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br></div></td><td valign="top"><pre style="margin: 0"><span style="color: #0000ff;">import</span> glob
+<span style="color: #0000ff;">import</span> os
+&nbsp;
+chaine = <span style="color: #FF0000;">"C:\windows"</span> <span style="color: #808080;">#Texte à rechercher</span>
+contenu = <span style="color: #FF0000;">"Nom Fichier"</span>
+&nbsp;
+fichier = open<span class="br0">(</span><span style="color: #FF0000;">"mod.txt"</span>,<span style="color: #FF0000;">"r"</span><span class="br0">)</span>
+<span style="color: #0000ff;">for</span> ligne <span style="color: #0000ff;">in</span> fichier:
+    <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span><span class="br0">(</span>chaine <span style="color: #0000ff;">in</span> ligne<span class="br0">)</span>:
+       contenu = contenu + <span style="color: #FF0000;">"<span style="color: #800000;">\n</span>"</span> + fichier.readline<span class="br0">(</span>ligne<span class="br0">)</span>
+fichier.close<span class="br0">(</span><span class="br0">)</span>
+&nbsp;
+&nbsp;
+fichier = open<span class="br0">(</span><span style="color: #FF0000;">'mod.txt'</span>, <span style="color: #FF0000;">'w'</span><span class="br0">)</span>
+fichier.write<span class="br0">(</span>contenu<span class="br0">)</span>
+fichier.close<span class="br0">(</span><span class="br0">)</span>
+&nbsp;
+<span style="color: #808080;">#voici mon script test qui ne marche pas</span></pre></td></tr></tbody></table></pre>
+</div>mais je ne trouve pas d'erreur<img src="./effacement de ligne dans un fichier en python_files/icon_cry.gif" border="0" alt="" title=":cry:" class="inlineimg"><img src="./effacement de ligne dans un fichier en python_files/icon_cry.gif" border="0" alt="" title=":cry:" class="inlineimg">
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023410" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023410" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023410" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023410" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023410"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023410"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023559">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">21h16</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023559" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023559" class="postcounter">#5</a><a id="postcount5023559" name="5"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen12">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u193329/n-tox/" title="N.tox est déconnecté"><strong>N.tox</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="N.tox est déconnecté" border="0" title="N.tox est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre éclairé
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-2-0.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">  <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"> <a href="https://www.developpez.com/user/profil/193329/N-tox"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>heu...</div><dt>Inscrit en</dt><dd>octobre 2007</dd><dt>Messages</dt><dd>648</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="193329" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="193329"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Sexe : <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"></div><div>Localisation : France, Essonne (Île de France)</div><div><br><b>Informations professionnelles :</b></div><div>Activité : heu...</div><div><br><b>Informations forums :</b></div><div>Inscription : octobre 2007</div><div>Messages : 648</div><div>Points : 773</div></div></div><dt>Points</dt><dd><span role="points" userid="193329" style="cursor: pointer;">773</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5023559">
+						<blockquote class="postcontent restore ">
+							<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:144px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="26"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br></div></td><td valign="top"><pre style="margin: 0"><span style="color: #0000ff;">import</span> shutil, os
+filename=<span style="color: #FF0000;">'c:<span style="color: #800000;">\\</span>myfilename'</span>
+shutil.copy<span class="br0">(</span>filename,filename+<span style="color: #FF0000;">'.tmp'</span><span class="br0">)</span>
+<span style="color: #0000ff;">with</span> file<span class="br0">(</span>filename+<span style="color: #FF0000;">'.tmp'</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> f_in:
+    <span style="color: #0000ff;">with</span> file<span class="br0">(</span>filename,<span style="color: #FF0000;">'w'</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> f_out:
+        <span style="color: #0000ff;">for</span> line <span style="color: #0000ff;">in</span> f_in:
+            <span style="color: #0000ff;">if</span> <span style="color: #FF0000;">'c:<span style="color: #800000;">\\</span>windows'</span>!=line.rstrip<span class="br0">(</span><span class="br0">)</span>.lower<span class="br0">(</span><span class="br0">)</span>:
+                f_out.write<span class="br0">(</span>line<span class="br0">)</span>
+os.remove<span class="br0">(</span>filename+<span style="color: #FF0000;">'.tmp'</span><span class="br0">)</span></pre></td></tr></tbody></table></pre>
+</div>
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023559" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023559" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023559" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023559" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023559"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023559"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5023602">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">26/02/2010,&nbsp;<span class="time">21h48</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5023602" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023602" class="postcounter">#6</a><a id="postcount5023602" name="6"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen13">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u131328/rambc/" title="rambc est déconnecté"><strong>rambc</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="rambc est déconnecté" border="0" title="rambc est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre expérimenté
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-3-0.png" alt="" border=""></span>
+			
+			<div style="text-align: center; margin-bottom: 4px"><img src="./effacement de ligne dans un fichier en python_files/embleme-chroniqueur.png" title="1 actualité publiée" user="131328" role="news" style="cursor: pointer;"> <img src="./effacement de ligne dans un fichier en python_files/embleme-faq.png" title="2 Q/R de FAQ rédigées" user="131328" role="faq" style="cursor: pointer;"></div>
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/131328/rambc"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>Enseignant</div><dt>Inscrit en</dt><dd>décembre 2006</dd><dt>Messages</dt><dd>2&nbsp;301</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="131328" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="131328"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France, Savoie (Rhône Alpes)</div><div><br><b>Informations professionnelles :</b></div><div>Activité : Enseignant</div><div><br><b>Informations forums :</b></div><div>Inscription : décembre 2006</div><div>Messages : 2&nbsp;301</div><div>Points : 1 748</div></div></div><dt>Points</dt><dd><span role="points" userid="131328" style="cursor: pointer;">1 748</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5023602">
+						<blockquote class="postcontent restore ">
+							<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="./effacement de ligne dans un fichier en python_files/quote_icon.png" alt="Citation" title="Citation"> Envoyé par <strong>reillyc</strong>
+					<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5023305" rel="nofollow"><img class="inlineimg" src="./effacement de ligne dans un fichier en python_files/viewpost-right.png" alt="Voir le message" title="Voir le message"></a>
+				</div>
+				<div class="message">par exemple mon fichier originel:<br>
+<br>
+w:\blabla <br>
+d:\blabla<br>
+c:\windows<br>
+w:\fgfgd<br>
+<br>
+Je voudrai qu'à la fin le fichier ressemble à ça:<br>
+<br>
+w:\blabla <br>
+d:\blabla<br>
+w:\fgfg</div>
+			
+		</div>
+	</div>
+</div>C'est un bon choix... <img src="./effacement de ligne dans un fichier en python_files/icon_mrgreen.gif" border="0" alt="" title=":mrgreen:" class="inlineimg">
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5023602" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5023602" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5023602" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5023602" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023602"> 1</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5023602"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5024018">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">27/02/2010,&nbsp;<span class="time">10h51</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5024018" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5024018" class="postcounter">#7</a><a id="postcount5024018" name="7"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen14">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u208887/tyrtamos/" title="tyrtamos est déconnecté"><strong>tyrtamos</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="tyrtamos est déconnecté" border="0" title="tyrtamos est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Expert éminent
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-5-5.png" alt="" border=""></span>
+			
+			<div style="text-align: center; margin-bottom: 4px"><img src="./effacement de ligne dans un fichier en python_files/embleme-redacteur.png" title="Rédacteur - 7 articles publiés" user="208887" role="publications" style="cursor: pointer;"> <img src="./effacement de ligne dans un fichier en python_files/embleme-chroniqueur.png" title="1 actualité publiée" user="208887" role="news" style="cursor: pointer;"> <img src="./effacement de ligne dans un fichier en python_files/embleme-faq.png" title="1 Q/R de FAQ rédigée" user="208887" role="faq" style="cursor: pointer;"> <img src="./effacement de ligne dans un fichier en python_files/embleme-uploadeur.png" title="Posteur de sources - 1 source postée" user="208887" role="uploads" style="cursor: pointer;"> <img src="./effacement de ligne dans un fichier en python_files/embleme-blogueur.png" title="6 billets blog publiés sur Developpez"></div>
+			
+			
+			<a rel="nofollow" class="postuseravatar" href="https://www.developpez.net/forums/u208887/tyrtamos/" title="tyrtamos est déconnecté">
+				<img src="./effacement de ligne dans un fichier en python_files/avatar.jpg" alt="Avatar de tyrtamos" title="Avatar de tyrtamos">
+			</a>
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/208887/tyrtamos"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><dt>Inscrit en</dt><dd>décembre 2007</dd><dt>Messages</dt><dd>3&nbsp;692</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="208887" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="208887"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations forums :</b></div><div>Inscription : décembre 2007</div><div>Messages : 3&nbsp;692</div><div>Points : 7 165</div></div></div><dt>Points</dt><dd><span role="points" userid="208887" style="cursor: pointer;">7 165</span></dd><dt>Billets dans le blog</dt><dd><a href="https://www.developpez.net/forums/blogs/208887-tyrtamos/">6</a></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow has_after_content">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5024018">
+						<blockquote class="postcontent restore ">
+							Bonjour,<br>
+<br>
+Correction de ton code:<br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:192px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br></div></td><td valign="top"><pre style="margin: 0">&nbsp;
+chaine = r<span style="color: #FF0000;">"c:\windows"</span> <span style="color: #808080;">#Texte à rechercher</span>
+contenu = <span style="color: #FF0000;">""</span>
+&nbsp;
+fichier = open<span class="br0">(</span><span style="color: #FF0000;">"mod.txt"</span>,<span style="color: #FF0000;">"r"</span><span class="br0">)</span>
+<span style="color: #0000ff;">for</span> ligne <span style="color: #0000ff;">in</span> fichier:
+    <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span><span class="br0">(</span>chaine <span style="color: #0000ff;">in</span> ligne<span class="br0">)</span>:
+        contenu += ligne
+fichier.close<span class="br0">(</span><span class="br0">)</span>
+&nbsp;
+fichier = open<span class="br0">(</span><span style="color: #FF0000;">'mod2.txt'</span>, <span style="color: #FF0000;">'w'</span><span class="br0">)</span>
+fichier.write<span class="br0">(</span>contenu<span class="br0">)</span>
+fichier.close<span class="br0">(</span><span class="br0">)</span></pre></td></tr></tbody></table></pre>
+</div>Détails:<br>
+<br>
+- chaine = r"c:\windows" =&gt; Il faut utiliser r"" pour éviter que python n'interprète le '\w' comme un caractère spécial. Autre solution, doubler le '\'. Par ailleurs, faire attention aux majuscules/minuscules: le 'C:' du code ne permet pas de trouver le 'c:' du fichier. Ou alors, mettre tout en majuscule au moment du test.<br>
+<br>
+- for ligne in fichier: =&gt; ici, ligne est déjà la ligne extraite du fichier. On n'a donc pas besoin du readline en plus.<br>
+<br>
+- contenu += ligne =&gt; ligne contient déjà une fin de ligne, ce n'est donc pas nécessaire de la rajouter. Par ailleurs, contenu += ligne est identique à contenu = contenu + ligne.<br>
+<br>
+Tyrtamos
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="after_content">
+				
+				
+				
+				
+					<blockquote class="signature restore"><div class="signaturecontainer">Un expert est une personne qui a fait toutes les erreurs qui peuvent être faites, dans un domaine étroit... (Niels Bohr)<br>
+Mes recettes python: <a rel="nofollow" href="http://www.jpvweb.com/" target="_blank">http://www.jpvweb.com</a></div></blockquote>
+				
+				
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5024018" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5024018" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5024018" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5024018" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5024018"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5024018"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5025287">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">28/02/2010,&nbsp;<span class="time">11h47</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5025287" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5025287" class="postcounter">#8</a><a id="postcount5025287" name="8"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen15">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u140181/eyquem/" title="eyquem est déconnecté"><strong>eyquem</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="eyquem est déconnecté" border="0" title="eyquem est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre extrêmement actif
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-3-0.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/140181/eyquem"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><dt>Inscrit en</dt><dd>janvier 2007</dd><dt>Messages</dt><dd>1&nbsp;418</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="140181" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="140181"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations forums :</b></div><div>Inscription : janvier 2007</div><div>Messages : 1&nbsp;418</div><div>Points : 1 651</div></div></div><dt>Points</dt><dd><span role="points" userid="140181" style="cursor: pointer;">1 651</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5025287">
+						<blockquote class="postcontent restore ">
+							Les programmes ci-dessus font un <font color="Sienna"><b>recopiage de la totalité du fichier avec élimination de certaines lignes.</b></font><br>
+<br>
+Imaginons un fichier d’une nature telle qu’on y fait seulement des ajouts de lignes et, de temps à autre, des modifications n’affectant que la fin du fichier, et que ce fichier soit très volumineux.<br>
+Imaginons par exemple un fichier de gestion prévisionnelle d’horaires de travail faisant 20 MB <font color="Silver">(!)</font> dont on veut éliminer dans l’extrême fin les lignes consacrées à MATTHIAS, HENG et GUILLAUME à partir du 14 mars. <br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:204px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br>75<br>76<br>77<br>78<br>79<br>80<br></div></td><td valign="top"><pre style="margin: 0">JAMES             : <span style="color: #cc66cc;">01</span> janvier     <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">17</span>h45
+GIOVANNI          : <span style="color: #cc66cc;">07</span> janvier     <span style="color: #cc66cc;">10</span>h45 - <span style="color: #cc66cc;">19</span>h00
+HENG              : <span style="color: #cc66cc;">07</span> janvier     <span style="color: #cc66cc;">10</span>h00 - <span style="color: #cc66cc;">15</span>h15
+GIOVANNI          : <span style="color: #cc66cc;">08</span> janvier     <span style="color: #cc66cc;">09</span>h00 - <span style="color: #cc66cc;">15</span>h00
+HERBERT           : <span style="color: #cc66cc;">08</span> janvier     <span style="color: #cc66cc;">08</span>h00 - <span style="color: #cc66cc;">14</span>h15
+TRUONG            : <span style="color: #cc66cc;">08</span> janvier     <span style="color: #cc66cc;">11</span>h00 - <span style="color: #cc66cc;">18</span>h00
+AHMED             : <span style="color: #cc66cc;">08</span> janvier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">17</span>h30
+HERBERT           : <span style="color: #cc66cc;">08</span> janvier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">19</span>h00
+MATTHIAS          : <span style="color: #cc66cc;">09</span> janvier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">17</span>h15
+HENG              : <span style="color: #cc66cc;">09</span> janvier     <span style="color: #cc66cc;">10</span>h15 - <span style="color: #cc66cc;">19</span>h45
+COLETTE           : <span style="color: #cc66cc;">12</span> janvier     <span style="color: #cc66cc;">11</span>h15 - <span style="color: #cc66cc;">14</span>h45
+GIOVANNI          : <span style="color: #cc66cc;">13</span> janvier     <span style="color: #cc66cc;">11</span>h30 - <span style="color: #cc66cc;">14</span>h00
+NADIA             : <span style="color: #cc66cc;">13</span> janvier     <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">19</span>h30
+NADIA             : <span style="color: #cc66cc;">13</span> janvier     <span style="color: #cc66cc;">09</span>h45 - <span style="color: #cc66cc;">16</span>h15
+GIOVANNI          : <span style="color: #cc66cc;">15</span> janvier     <span style="color: #cc66cc;">09</span>h15 - <span style="color: #cc66cc;">14</span>h00
+GUILLAUME         : <span style="color: #cc66cc;">15</span> janvier     <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">19</span>h00
+MIGUEL            : <span style="color: #cc66cc;">15</span> janvier     <span style="color: #cc66cc;">10</span>h30 - <span style="color: #cc66cc;">13</span>h45
+HERBERT           : <span style="color: #cc66cc;">16</span> janvier     <span style="color: #cc66cc;">12</span>h30 - <span style="color: #cc66cc;">14</span>h30
+HERBERT           : <span style="color: #cc66cc;">16</span> janvier     <span style="color: #cc66cc;">11</span>h30 - <span style="color: #cc66cc;">16</span>h45
+JAMES             : <span style="color: #cc66cc;">18</span> janvier     <span style="color: #cc66cc;">10</span>h30 - <span style="color: #cc66cc;">15</span>h15
+HENG              : <span style="color: #cc66cc;">20</span> janvier     <span style="color: #cc66cc;">11</span>h15 - <span style="color: #cc66cc;">19</span>h45
+TRUONG            : <span style="color: #cc66cc;">21</span> janvier     <span style="color: #cc66cc;">12</span>h30 - <span style="color: #cc66cc;">17</span>h00
+HERBERT           : <span style="color: #cc66cc;">21</span> janvier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">19</span>h15
+AHMED             : <span style="color: #cc66cc;">23</span> janvier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">19</span>h45
+GUILLAUME         : <span style="color: #cc66cc;">23</span> janvier     <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">19</span>h45
+COLETTE           : <span style="color: #cc66cc;">23</span> janvier     <span style="color: #cc66cc;">11</span>h30 - <span style="color: #cc66cc;">17</span>h45
+AHMED             : <span style="color: #cc66cc;">23</span> janvier     <span style="color: #cc66cc;">11</span>h15 - <span style="color: #cc66cc;">17</span>h15
+HENG              : <span style="color: #cc66cc;">24</span> janvier     <span style="color: #cc66cc;">08</span>h45 - <span style="color: #cc66cc;">13</span>h45
+TRUONG            : <span style="color: #cc66cc;">26</span> janvier     <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">16</span>h45
+MATTHIAS          : <span style="color: #cc66cc;">27</span> janvier     <span style="color: #cc66cc;">08</span>h45 - <span style="color: #cc66cc;">19</span>h00
+MARTINE           : <span style="color: #cc66cc;">28</span> janvier     <span style="color: #cc66cc;">08</span>h45 - <span style="color: #cc66cc;">16</span>h30
+GUILLAUME         : <span style="color: #cc66cc;">28</span> janvier     <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">17</span>h45
+AHMED             : <span style="color: #cc66cc;">02</span> fevrier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">17</span>h45
+HENG              : <span style="color: #cc66cc;">03</span> fevrier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">17</span>h00
+COLETTE           : <span style="color: #cc66cc;">05</span> fevrier     <span style="color: #cc66cc;">09</span>h45 - <span style="color: #cc66cc;">15</span>h45
+JAMES             : <span style="color: #cc66cc;">06</span> fevrier     <span style="color: #cc66cc;">09</span>h15 - <span style="color: #cc66cc;">14</span>h45
+GUILLAUME         : <span style="color: #cc66cc;">07</span> fevrier     <span style="color: #cc66cc;">12</span>h30 - <span style="color: #cc66cc;">17</span>h45
+MIGUEL            : <span style="color: #cc66cc;">07</span> fevrier     <span style="color: #cc66cc;">11</span>h30 - <span style="color: #cc66cc;">15</span>h00
+HENG              : <span style="color: #cc66cc;">07</span> fevrier     <span style="color: #cc66cc;">11</span>h00 - <span style="color: #cc66cc;">13</span>h30
+GUILLAUME         : <span style="color: #cc66cc;">07</span> fevrier     <span style="color: #cc66cc;">08</span>h30 - <span style="color: #cc66cc;">13</span>h45
+NADIA             : <span style="color: #cc66cc;">08</span> fevrier     <span style="color: #cc66cc;">12</span>h30 - <span style="color: #cc66cc;">16</span>h15
+HERBERT           : <span style="color: #cc66cc;">08</span> fevrier     <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">17</span>h00
+MATTHIAS          : <span style="color: #cc66cc;">10</span> fevrier     <span style="color: #cc66cc;">09</span>h00 - <span style="color: #cc66cc;">14</span>h15
+MIGUEL            : <span style="color: #cc66cc;">13</span> fevrier     <span style="color: #cc66cc;">08</span>h00 - <span style="color: #cc66cc;">17</span>h15
+MARTINE           : <span style="color: #cc66cc;">14</span> fevrier     <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">18</span>h00
+MATTHIAS          : <span style="color: #cc66cc;">15</span> fevrier     <span style="color: #cc66cc;">09</span>h00 - <span style="color: #cc66cc;">17</span>h30
+JAMES             : <span style="color: #cc66cc;">15</span> fevrier     <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">14</span>h30
+GIOVANNI          : <span style="color: #cc66cc;">18</span> fevrier     <span style="color: #cc66cc;">08</span>h30 - <span style="color: #cc66cc;">18</span>h15
+MIGUEL            : <span style="color: #cc66cc;">20</span> fevrier     <span style="color: #cc66cc;">10</span>h00 - <span style="color: #cc66cc;">13</span>h45
+GUILLAUME         : <span style="color: #cc66cc;">20</span> fevrier     <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">19</span>h45
+TRUONG            : <span style="color: #cc66cc;">21</span> fevrier     <span style="color: #cc66cc;">09</span>h45 - <span style="color: #cc66cc;">15</span>h15
+GUILLAUME         : <span style="color: #cc66cc;">27</span> fevrier     <span style="color: #cc66cc;">11</span>h45 - <span style="color: #cc66cc;">14</span>h45
+AHMED             : <span style="color: #cc66cc;">27</span> fevrier     <span style="color: #cc66cc;">10</span>h00 - <span style="color: #cc66cc;">15</span>h15
+NADIA             : <span style="color: #cc66cc;">27</span> fevrier     <span style="color: #cc66cc;">11</span>h45 - <span style="color: #cc66cc;">14</span>h00
+COLETTE           : <span style="color: #cc66cc;">28</span> fevrier     <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">18</span>h15
+MIGUEL            : <span style="color: #cc66cc;">28</span> fevrier     <span style="color: #cc66cc;">10</span>h30 - <span style="color: #cc66cc;">19</span>h30
+MARTINE           : <span style="color: #cc66cc;">02</span> mars        <span style="color: #cc66cc;">10</span>h15 - <span style="color: #cc66cc;">14</span>h15
+NADIA             : <span style="color: #cc66cc;">03</span> mars        <span style="color: #cc66cc;">09</span>h15 - <span style="color: #cc66cc;">18</span>h15
+HERBERT           : <span style="color: #cc66cc;">07</span> mars        <span style="color: #cc66cc;">11</span>h00 - <span style="color: #cc66cc;">18</span>h00
+MIGUEL            : <span style="color: #cc66cc;">07</span> mars        <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">17</span>h45
+NADIA             : <span style="color: #cc66cc;">08</span> mars        <span style="color: #cc66cc;">08</span>h00 - <span style="color: #cc66cc;">14</span>h00
+MATTHIAS          : <span style="color: #cc66cc;">12</span> mars        <span style="color: #cc66cc;">08</span>h45 - <span style="color: #cc66cc;">18</span>h45
+GUILLAUME         : <span style="color: #cc66cc;">12</span> mars        <span style="color: #cc66cc;">12</span>h30 - <span style="color: #cc66cc;">14</span>h00
+AHMED             : <span style="color: #cc66cc;">13</span> mars        <span style="color: #cc66cc;">10</span>h30 - <span style="color: #cc66cc;">13</span>h45
+GIOVANNI          : <span style="color: #cc66cc;">14</span> mars        <span style="color: #cc66cc;">11</span>h15 - <span style="color: #cc66cc;">18</span>h30
+COLETTE           : <span style="color: #cc66cc;">20</span> mars        <span style="color: #cc66cc;">10</span>h15 - <span style="color: #cc66cc;">15</span>h45
+TRUONG            : <span style="color: #cc66cc;">21</span> mars        <span style="color: #cc66cc;">11</span>h15 - <span style="color: #cc66cc;">13</span>h30
+GIOVANNI          : <span style="color: #cc66cc;">25</span> mars        <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">15</span>h45
+TRUONG            : <span style="color: #cc66cc;">26</span> mars        <span style="color: #cc66cc;">11</span>h00 - <span style="color: #cc66cc;">14</span>h00
+AHMED             : <span style="color: #cc66cc;">27</span> mars        <span style="color: #cc66cc;">08</span>h45 - <span style="color: #cc66cc;">15</span>h45
+AHMED             : <span style="color: #cc66cc;">28</span> mars        <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">17</span>h30
+MATTHIAS          : <span style="color: #cc66cc;">28</span> mars        <span style="color: #cc66cc;">11</span>h45 - <span style="color: #cc66cc;">17</span>h15
+HERBERT           : <span style="color: #cc66cc;">01</span> avril       <span style="color: #cc66cc;">08</span>h15 - <span style="color: #cc66cc;">16</span>h30
+COLETTE           : <span style="color: #cc66cc;">03</span> avril       <span style="color: #cc66cc;">08</span>h30 - <span style="color: #cc66cc;">16</span>h00
+GUILLAUME         : <span style="color: #cc66cc;">07</span> avril       <span style="color: #cc66cc;">12</span>h15 - <span style="color: #cc66cc;">16</span>h15
+NADIA             : <span style="color: #cc66cc;">10</span> avril       <span style="color: #cc66cc;">09</span>h00 - <span style="color: #cc66cc;">13</span>h30
+MARTINE           : <span style="color: #cc66cc;">10</span> avril       <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">18</span>h00
+MATTHIAS          : <span style="color: #cc66cc;">12</span> avril       <span style="color: #cc66cc;">09</span>h45 - <span style="color: #cc66cc;">15</span>h15
+HENG              : <span style="color: #cc66cc;">15</span> avril       <span style="color: #cc66cc;">12</span>h00 - <span style="color: #cc66cc;">17</span>h00
+AHMED             : <span style="color: #cc66cc;">17</span> avril       <span style="color: #cc66cc;">09</span>h30 - <span style="color: #cc66cc;">18</span>h45</pre></td></tr></tbody></table></pre>
+</div>Va-t-on vraiment recopier chaque fois 20 MB pour ne modifier que les derniers 5000 octets ?<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Pour diminuer ce labeur, le code de reillyc peut être adapté pour en faire un code de<font color="sienna"><b> réécriture partielle avec élimination de certaines lignes</b></font>:<br>
+on n’enregistre (avec les éliminations voulues) dans l’objet de nom ’contenu’ que la fin à partir d’une position atteinte par <b>seek() </b>, et on la réécrit sur elle même en l’écrasant à partir de cette même position atteinte par <b>seek()</b><br>
+<br>
+Pour éviter de devoir fermer et réouvrir le fichier, il faut ouvrir le fichier directement en mode <b>’r+’</b> .<br>
+Pour que <b>find() </b>trouve avec exactitude les positions correctes dans le fichier, il faut de plus que l’ouverture se fasse en mode binaire spécifié par un <b>’b’</b><br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:204px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br></div></td><td valign="top"><pre style="margin: 0">chaine = r<span style="color: #FF0000;">"c:\windows"</span> <span style="color: #808080;"># Texte à rechercher</span>
+contenu = <span style="color: #FF0000;">""</span>
+&nbsp;
+<span style="color: #0000ff;">with</span> open<span class="br0">(</span><span style="color: #FF0000;">"mod.txt"</span>,<span style="color: #FF0000;">"r+b"</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> fichier:
+&nbsp;
+    ch = f.read<span class="br0">(</span><span class="br0">)</span>
+    x = ch.find<span class="br0">(</span>chaine<span class="br0">)</span>
+    x = ch<span class="br0">[</span><span style="color: #cc66cc;">0</span>:x<span class="br0">]</span>.rfind<span class="br0">(</span><span style="color: #FF0000;">'<span style="color: #800000;">\n</span>'</span><span class="br0">)</span> + <span style="color: #cc66cc;">1</span>
+&nbsp;
+    fichier.seek<span class="br0">(</span>x<span class="br0">)</span>
+    <span style="color: #0000ff;">for</span> ligne <span style="color: #0000ff;">in</span> fichier<span class="br0">[</span>x:<span class="br0">]</span>:
+        <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span><span class="br0">(</span>chaine <span style="color: #0000ff;">in</span> ligne<span class="br0">)</span>:
+            contenu += ligne
+&nbsp;
+    fichier.seek<span class="br0">(</span>x<span class="br0">)</span>
+    fichier.write<span class="br0">(</span>contenu<span class="br0">)</span></pre></td></tr></tbody></table></pre>
+</div><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+On peut aller plus loin:<br>
+afin déviter d’enregistrer provisoirement dans un objet ’contenu’ ou un fichier temporaire (hormis le buffer de liaison avec le DD),<br>
+il suffit de mettre à profit la possibilité d’ouvrir plusieurs pointeurs de fichier sur un même fichier pour procéder par <font color="sienna"><b>recopie immédiate de lignes avec élimination de certaines lignes </b></font><br>
+<br>
+Par exemple, avec le fichier donné au dessus:<br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:180px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br></div></td><td valign="top"><pre style="margin: 0"><span style="color: #808080;"># programme d'effacement de lignes dans un fichier</span>
+noms_a_effacer, a_partir_de = <span class="br0">(</span><span style="color: #FF0000;">'MATTHIAS'</span>,<span style="color: #FF0000;">'HENG'</span>,<span style="color: #FF0000;">'GUILLAUME'</span><span class="br0">)</span>, <span style="color: #FF0000;">'14 mars'</span>
+&nbsp;
+<span style="color: #0000ff;">with</span> open<span class="br0">(</span><span style="color: #FF0000;">'previsionnel.txt'</span>,<span style="color: #FF0000;">'rb'</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> f:
+    <span style="color: #0000ff;">with</span> open<span class="br0">(</span><span style="color: #FF0000;">'previsionnel.txt'</span>,<span style="color: #FF0000;">'r+b'</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> g:
+        ch = f.read<span class="br0">(</span><span class="br0">)</span>
+        x = ch.find<span class="br0">(</span>a_partir_de<span class="br0">)</span>
+        x = ch<span class="br0">[</span><span style="color: #cc66cc;">0</span>:x<span class="br0">]</span>.rfind<span class="br0">(</span><span style="color: #FF0000;">'<span style="color: #800000;">\n</span>'</span><span class="br0">)</span> + <span style="color: #cc66cc;">1</span>
+        f.seek<span class="br0">(</span>x<span class="br0">)</span>
+        g.seek<span class="br0">(</span>x<span class="br0">)</span>
+        <span class="br0">[</span> g.write<span class="br0">(</span>ln<span class="br0">)</span> <span style="color: #0000ff;">for</span> ln <span style="color: #0000ff;">in</span> f <span style="color: #0000ff;">if</span> ln.split<span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span style="color: #cc66cc;">0</span><span class="br0">]</span> <span style="color: #0000ff;">not</span> <span style="color: #0000ff;">in</span> noms_a_effacer <span class="br0">]</span>
+        g.truncate<span class="br0">(</span><span class="br0">)</span></pre></td></tr></tbody></table></pre>
+</div>Comme il n’y a plus de ligne <b>contenu += ligne</b> , on peut écrire le transfert sous forme de <i>list comprehension </i>(les <i>list comprehensions </i>n’accpetant pas des opérations <b>+</b>).<br>
+<br>
+<br>
+<br>
+Ce genre de code permet aussi bien:<br>
+<br>
+- de modifier (éliminer n’est qu’un cas particulier, mais il faut que les modifications n’entrainent pas une augmentation du nombre de caractères d’une ligne recopiée) seulement la fin d’un gros fichier sans toucher à la majeure partie du fichier<br>
+<br>
+- que de faire la même chose sur l’ensemble d’un fichier trop volumineux pour pouvoir être recopié en mémoire: si on faisait le même genre de recopie immédiate, mais avec deux fichiers différents (et non pas 2 pointeurs dans un même fichier), on ferait croître le fichier de recopie sans que le fichier d’origine diminue.
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5025287" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5025287" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5025287" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5025287" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025287"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025287"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5025375">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">28/02/2010,&nbsp;<span class="time">13h25</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5025375" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5025375" class="postcounter">#9</a><a id="postcount5025375" name="9"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen16">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u140181/eyquem/" title="eyquem est déconnecté"><strong>eyquem</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="eyquem est déconnecté" border="0" title="eyquem est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre extrêmement actif
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-3-0.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/140181/eyquem"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><dt>Inscrit en</dt><dd>janvier 2007</dd><dt>Messages</dt><dd>1&nbsp;418</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="140181" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="140181"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations forums :</b></div><div>Inscription : janvier 2007</div><div>Messages : 1&nbsp;418</div><div>Points : 1 651</div></div></div><dt>Points</dt><dd><span role="points" userid="140181" style="cursor: pointer;">1 651</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5025375">
+						<blockquote class="postcontent restore ">
+							<font color="White">.........</font><font color="Sienna">suite du précédent post</font><br>
+<br>
+<br>
+J’ai en fait créé le fichier “prévisionnel d’horaires“ de mon post précédent pour mettre en application de façon simple une instance de la classe <b>mmap.mmap </b>dans un programme de mise à jour (updating) de fichier, et non plus simplement d’élimination.<br>
+<br>
+<br>
+En fixant les lignes toutes identiquement formatées et en mettant de coté volontairement toute procédure de vérification des données entrées à la main, le code sans complication, permettant de modifier les heures de matin (située entre les positions 35 et 40 dans chaque ligne) et/ou les heures d’après-midi (situées entre les positions 43 et 48) d’une ou plusieurs lignes de ce fichier "previsionnel.txt", est le suivant:<br>
+<br>
+<div class="bbcode_container">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+	<td style="border: 0; padding: 0; text-align: left">Code  :</td>
+	<td style="border: 0; padding: 0; text-align: right"><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_selectionnerCode(this);">Sélectionner tout</a> -
+	<a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#" onclick="return ano_etendreCode(this);">Visualiser dans une fenêtre à part</a></td></tr></tbody></table>
+	<pre class="bbcode_code" style="height:204px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="33"><div style="border: 1px dashed gray; padding-left: 5px; padding-right: 5px; margin-right: 5px; text-align: right; font-family: monospace">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br></div></td><td valign="top"><pre style="margin: 0"><span style="color: #0000ff;">import</span> mmap
+&nbsp;
+<span style="color: #0000ff;">with</span> open<span class="br0">(</span><span style="color: #FF0000;">'previsionnel.txt'</span>,<span style="color: #FF0000;">'r+b'</span><span class="br0">)</span> <span style="color: #0000ff;">as</span> f:
+    mapper = mmap.mmap<span class="br0">(</span>f.fileno<span class="br0">(</span><span class="br0">)</span>,<span style="color: #cc66cc;">0</span><span class="br0">)</span>
+    <span style="color: #0000ff;">print</span> mapper<span class="br0">[</span>-<span style="color: #cc66cc;">699</span>:<span class="br0">]</span> <span style="color: #808080;"># visualisation de la fin du fichier</span>
+&nbsp;
+    <span style="color: #0000ff;">print</span> <span style="color: #FF0000;">'<span style="color: #800000;">\n</span>Entrez les repérages des lignes à modifier (RIEN pour clore):'</span>
+    <span style="color: #0000ff;">while</span> <span style="color: #cc66cc;">1</span>:
+&nbsp;
+        pjm = raw_input<span class="br0">(</span><span style="color: #FF0000;">'<span style="color: #800000;">\n</span>  prenom et date, séparés par blanc/s : '</span><span class="br0">)</span>
+        <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> pjm:  <span style="color: #0000ff;">break</span>
+        prenom,j,m = pjm.split<span class="br0">(</span><span class="br0">)</span>
+        horaire = raw_input<span class="br0">(</span><span style="color: #FF0000;">'  une heure HHhMM, ou deux, de remplacement, séparés par blanc/s : '</span><span class="br0">)</span>.split<span class="br0">(</span><span class="br0">)</span>
+&nbsp;
+        x = mapper.find<span class="br0">(</span>prenom.upper<span class="br0">(</span><span class="br0">)</span>.ljust<span class="br0">(</span><span style="color: #cc66cc;">18</span><span class="br0">)</span>+<span style="color: #FF0000;">': '</span>+j+<span style="color: #FF0000;">' '</span>+m<span class="br0">)</span>
+&nbsp;
+        <span style="color: #0000ff;">for</span> heure <span style="color: #0000ff;">in</span> horaire:
+            <span style="color: #0000ff;">if</span> heure<span class="br0">[</span><span style="color: #cc66cc;">0</span>:<span style="color: #cc66cc;">2</span><span class="br0">]</span> <span style="color: #0000ff;">in</span> <span class="br0">(</span><span style="color: #FF0000;">'08'</span>,<span style="color: #FF0000;">'09'</span>,<span style="color: #FF0000;">'10'</span>,<span style="color: #FF0000;">'11'</span>,<span style="color: #FF0000;">'12'</span><span class="br0">)</span>:
+                mapper<span class="br0">[</span>x+<span style="color: #cc66cc;">35</span>:x+<span style="color: #cc66cc;">40</span><span class="br0">]</span> = heure
+            <span style="color: #0000ff;">elif</span> heure<span class="br0">[</span><span style="color: #cc66cc;">0</span>:<span style="color: #cc66cc;">2</span><span class="br0">]</span> <span style="color: #0000ff;">in</span> <span class="br0">(</span><span style="color: #FF0000;">'13'</span>,<span style="color: #FF0000;">'14'</span>,<span style="color: #FF0000;">'15'</span>,<span style="color: #FF0000;">'16'</span>,<span style="color: #FF0000;">'17'</span>,<span style="color: #FF0000;">'18'</span>,<span style="color: #FF0000;">'19'</span><span class="br0">)</span>:
+                mapper<span class="br0">[</span>x+<span style="color: #cc66cc;">43</span>:x+<span style="color: #cc66cc;">48</span><span class="br0">]</span> = heure
+            <span style="color: #0000ff;">else</span>:
+                <span style="color: #0000ff;">print</span> <span style="color: #FF0000;">"  Erreur dans l'heure entrée "</span>+heure+<span style="color: #FF0000;">' . Modification non effectuée'</span>
+&nbsp;
+    mapper.flush<span class="br0">(</span><span class="br0">)</span>
+    mapper.close<span class="br0">(</span><span class="br0">)</span></pre></td></tr></tbody></table></pre>
+</div><br>
+L’usage d’une instance de <b>mmap</b> donne une grande souplesse:<br>
+on peut par exemple entrer les données pour modifier des lignes sans tenir compte de l’ordre de ces lignes dans le fichier. <br>
+<br>
+Ce serait possible aussi sans <b>mmap</b> mais en devant utiliser à la fois un <b>ch = f.read()</b> et le pointeur de fichier<b> f</b> :<br>
+une instance de <b>mmap</b> fournit en fait la même chaîne qu’un <b>ch = f.read() </b>qui doit être utilisée pour faire de recherches du genre <b>x = ch.find(’COLETTE’)</b> , mais elle apporte en plus une facilité d’action qui évite de devoir faire ensuite de laborieux <b> f.seek() </b>pour translater le pointeur de fichier aux bonnes positions suivis de <b>f.write(quelque_chose)</b> pour écrire.<br>
+<br>
+Au lieu de cela, on groupe en une même instruction le positionnement et l’écriture:<br>
+une seule instruction <b>mapper[x+35 : x+40] = heure</b> indique que l’écriture se fait entre les positions x+35 et x+40 et déclenche cette écriture.<br>
+<br>
+C’est à dire qu’une instance de <b>mmap </b>est une “chaîne mutable“: on peut y appliquer les techniques de chaîne, mais en plus elle est mutable et ses modifications se répercutent dans le fichier dont elle est l’émanation.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font color="Teal"><b><font size="5">---------------------------------------------</font></b></font><br>
+<br>
+<br>
+J’espère montrer par ces codes que pour intervenir sur des fichiers, on n’est pas assujetti à devoir toujours procéder par recopiage total de fichier, et que lorsqu’on y est obligé on peut dans certains cas ne même pas avoir à créer un double qui croît progressivement.<br>
+<br>
+J’espère couper ainsi l’herbe sous les pieds à cette fâcheuse légende urbaine selon laquelle les manipulations de fichiers sont obligatoirement compliquées.<br>
+<br>
+Python serait il vraiment bon s’il ne permettait pas de faire les choses mieux qu’invariablement par  recopie de fichier en entier ?
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5025375" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5025375" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5025375" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5025375" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025375"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025375"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5025453">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">28/02/2010,&nbsp;<span class="time">14h29</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5025453" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5025453" class="postcounter">#10</a><a id="postcount5025453" name="10"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen17">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u193329/n-tox/" title="N.tox est déconnecté"><strong>N.tox</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="N.tox est déconnecté" border="0" title="N.tox est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre éclairé
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/etoiles-2-0.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">  <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"> <a href="https://www.developpez.com/user/profil/193329/N-tox"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>heu...</div><dt>Inscrit en</dt><dd>octobre 2007</dd><dt>Messages</dt><dd>648</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="193329" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="193329"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Sexe : <img src="./effacement de ligne dans un fichier en python_files/male.png" alt="Homme" title="Homme"></div><div>Localisation : France, Essonne (Île de France)</div><div><br><b>Informations professionnelles :</b></div><div>Activité : heu...</div><div><br><b>Informations forums :</b></div><div>Inscription : octobre 2007</div><div>Messages : 648</div><div>Points : 773</div></div></div><dt>Points</dt><dd><span role="points" userid="193329" style="cursor: pointer;">773</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+				<div class="content">
+					<div id="post_message_5025453">
+						<blockquote class="postcontent restore ">
+							cool... merci eyquem <img src="./effacement de ligne dans un fichier en python_files/ccool.gif" border="0" alt="" title=":ccool:" class="inlineimg">
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5025453" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5025453" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5025453" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5025453" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025453"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5025453"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+<li class="postbitlegacy postbitim postcontainer old" id="post_5033718">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+	<div class="posthead" style="">
+			<span class="postdate old">
+				
+					<span class="date">03/03/2010,&nbsp;<span class="time">14h51</span></span>
+				
+			</span>
+			<span class="nodecontrols">
+				
+					<a name="post5033718" href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#post5033718" class="postcounter">#11</a><a id="postcount5033718" name="11"></a>
+				
+				
+				
+			</span>
+	</div>
+	<div class="postdetails" style="">
+		<div class="userinfo" style="">
+			<div class="username_container">
+			
+				<div class="popupmenu memberaction" id="yui-gen18">
+	<a rel="nofollow" class="username offline " href="https://www.developpez.net/forums/u269281/reillyc/" title="reillyc est déconnecté"><strong>reillyc</strong></a>
+	
+</div>
+				<img class="inlineimg onlinestatus" src="./effacement de ligne dans un fichier en python_files/user-offline.png" alt="reillyc est déconnecté" border="0" title="reillyc est déconnecté">
+
+			
+			</div>
+			<span class="usertitle">
+				Membre à l'essai
+			</span>
+			
+				<span class="rank"><img src="./effacement de ligne dans un fichier en python_files/nv-barre-5.png" alt="" border=""></span>
+			
+			
+			
+			 
+			
+				<hr>
+				<dl class="userinfo_extra">
+					<div style="float: left; width: 154px"><div><img src="./effacement de ligne dans un fichier en python_files/france.gif" title="France">   <a href="https://www.developpez.com/user/profil/269281/reillyc"><img src="./effacement de ligne dans un fichier en python_files/pro.png" alt="Profil pro" title="Profil pro"></a> </div><div>Étudiant</div><dt>Inscrit en</dt><dd>novembre 2008</dd><dt>Messages</dt><dd>37</dd></div><div style="float: right; margin-top: 5px"><img src="./effacement de ligne dans un fichier en python_files/profil-etendu.gif" title="Plus de détails..." role="profiletendu" userid="269281" style="cursor: pointer;"></div><div style="clear: both"></div><div style="display: none" role="profiletendu" userid="269281"><div class="kha_titleBar">Détails du profil<img style="float: right; cursor: pointer" src="./effacement de ligne dans un fichier en python_files/cross.gif"></div><div class="kha_content"><div><b>Informations personnelles :</b></div><div>Localisation : France</div><div><br><b>Informations professionnelles :</b></div><div>Activité : Étudiant</div><div>Secteur : High Tech - Produits et services télécom et Internet</div><div><br><b>Informations forums :</b></div><div>Inscription : novembre 2008</div><div>Messages : 37</div><div>Points : 20</div></div></div><dt>Points</dt><dd><span role="points" userid="269281" style="cursor: pointer;">20</span></dd>
+				</dl>
+				
+				
+				<div class="imlinks">
+					    
+				</div>
+			
+		</div>
+		<div class="postbody">
+			<div class="postrow">
+				
+				
+				<h2 class="title icon">
+					<img src="./effacement de ligne dans un fichier en python_files/icon1.png" alt="Par défaut" title="Par défaut"> 
+				</h2>
+				
+
+
+						
+						
+							
+						
+				<div class="content">
+					<div id="post_message_5033718">
+						<blockquote class="postcontent restore ">
+							merci<br>
+grâce à  vous j'ai résolu mon problème et même plus! <img src="./effacement de ligne dans un fichier en python_files/ccool.gif" border="0" alt="" title=":ccool:" class="inlineimg"><img src="./effacement de ligne dans un fichier en python_files/ccool.gif" border="0" alt="" title=":ccool:" class="inlineimg"><img src="./effacement de ligne dans un fichier en python_files/ccool.gif" border="0" alt="" title=":ccool:" class="inlineimg">
+						</blockquote>
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<div class="cleardiv"></div>
+		</div>
+	</div>
+		<div class="postfoot">
+			<!-- <div class="postfoot_container"> -->
+			<div class="textcontrols floatcontainer">
+				<span class="postcontrols">
+					<img style="display:none" id="progress_5033718" src="./effacement de ligne dans un fichier en python_files/progress.gif" alt="">
+					
+					
+					
+						<a id="qrwq_5033718" class="newreply" href="https://www.developpez.net/forums/newreply.php?do=newreply&amp;p=5033718" rel="nofollow" title="Répondre avec citation"><img id="quoteimg_5033718" src="./effacement de ligne dans un fichier en python_files/clear.gif" alt="Répondre avec citation" title="Répondre avec citation">  Répondre avec citation</a> 
+					
+					
+					
+<span class="seperator">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucehautgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5033718"> 0</a><span class="seperator sepmarge">&nbsp;</span><a title="Connectez-vous pour voter" style="background: url(https://forum.developpez.be/images/buttons/poucebasgris.png) no-repeat scroll left center transparent; cursor: pointer" p="5033718"> 0</a>
+				</span>
+				<span class="postlinking">
+					
+						
+					
+
+					
+					
+					
+					
+
+					
+					
+
+					
+					
+					
+					
+					
+				</span>
+			<!-- </div> -->
+			</div>
+		</div>
+	<hr>
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+		<a rel="nofollow" href="https://www.developpez.net/forums/newreply.php?p=5033718&amp;noquote=1" class="newcontent_textcontrol" id="newreplylink_bottom"><span>+</span> Répondre à la discussion</a>
+<div style="position: absolute; left: 390px; padding-top: 5px; color: green; font-weight: bold; font-size: 12pt">Cette discussion est résolue.</div>
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		
+	</div>
+</div>
+
+<div class="above_threadlist_controls toolsmenu"><center><table style="width: 75%"><tbody><tr><td><a href="http://python.developpez.com/" target="_blank">Actualités</a></td><td><a href="http://python.developpez.com/faq/" target="_blank">F.A.Q PYTHON</a></td><td><a href="http://python.developpez.com/cours/" target="_blank">TUTORIELS PYTHON</a></td><td><a href="http://python.developpez.com/sources/" target="_blank">SOURCES PYTHON</a></td><td><a href="http://python.developpez.com/telecharger/index/categorie/34/Outils-Python" target="_blank">OUTILS PYTHON</a></td><td><a href="http://python.developpez.com/livres/" target="_blank">LIVRES PYTHON</a></td><td><a href="http://pyqt.developpez.com/" target="_blank">PyQt</a></td></tr></tbody></table></center></div>
+<div style="clear: both"></div>
+<div class="breadcrumb breadcrumb2">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="https://www.developpez.net/forums/"><img src="./effacement de ligne dans un fichier en python_files/navbit-home2.png" alt="Accueil" title="Accueil"></a></li>
+		
+	<li class="navbit"><a href="https://www.developpez.net/forums/">Index du forum</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f2/autres-langages/">Autres langages</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f96/autres-langages/python-zope/">Python &amp; Zope</a></li>
+
+	<li class="navbit"><a href="https://www.developpez.net/forums/f1155/autres-langages/python-zope/general-python/">Général Python</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> effacement de ligne dans un fichier en python</span></li>
+
+	</ul>
+</div><div id="offresdvp" style="width: 600px; margin: 5px auto 10px auto">	<link rel="stylesheet" type="text/css" href="./effacement de ligne dans un fichier en python_files/offres.css">
+
+<div id="banner600" class="banner standard bx3"><div class="banniere"><div class="contenu" style="background:none;"><div class="informations bannerX3"><div><p class="banner_info fs11" role="titre"><a href="https://emploi.developpez.com/offres/clic/a/124495/t/1/f/600/c/standard" target="_parent">Développeur python</a></p><p class="banner_info" role="societeLien">&#8627;&nbsp;<a class="" href="https://emploi.developpez.com/offres/liste/a/PimenTech" target="_parent">PimenTech</a>&nbsp;-&nbsp;Ile de France&nbsp;-&nbsp;Paris (75020)</p></div><div><p class="banner_info fs11" role="titre"><a href="https://emploi.developpez.com/offres/clic/a/122513/t/1/f/600/c/standard" target="_parent">Senior Data Scientist Python - CAC 40 - Paris F-H</a></p><p class="banner_info" role="societeLien">&#8627;&nbsp;<a class="" href="https://emploi.developpez.com/offres/liste/a/Skill+Hunter" target="_parent">Skill Hunter</a>&nbsp;-&nbsp;Ile de France&nbsp;-&nbsp;Paris (75006)</p></div><div><p class="banner_info fs11" role="titre"><a href="https://emploi.developpez.com/offres/clic/a/123193/t/1/f/600/c/standard" target="_parent">Responsable Informatique H/F</a></p><p class="banner_info" role="societeLien">&#8627;&nbsp;<a class="" href="https://emploi.developpez.com/offres/liste/a/Michael+Page" target="_parent">Michael Page</a>&nbsp;-&nbsp;Ile de France&nbsp;-&nbsp;Sarcelles (95200)</p></div><p class="btn"><a href="http://emploi.developpez.com/" class="boutonLien">Voir plus d'offres</a></p></div></div></div></div></div>
+<script type="text/javascript"> $(function() { $("#offresdvp").load("/forums/anooffresdvp.php?rub=27&col=python"); }); </script>
+
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			<strong>«</strong>
+			<a href="https://www.developpez.net/forums/d883673-precedent/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/" rel="nofollow">Discussion précédente</a>
+			|
+			<a href="https://www.developpez.net/forums/d883673-suivant/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/" rel="nofollow">Discussion suivante</a>
+			<strong>»</strong>
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+	
+	
+	<div id="similar_threads">
+		<h4 class="threadinfohead blockhead">Discussions similaires</h4>
+		<div id="similar_threads_list" class="thread_info_block blockbody formcontrols">
+			<ol class="similar_threads">
+			<li class="floatcontainer">
+  <div class="titleblock">
+    <h6><a href="https://www.developpez.net/forums/d729607/php/langage/fichiers/csv-effacer-ligne-fichier-csv/" title="bonjour, 
+ 
+je fait plusieurs...">[CSV] Effacer une ligne dans un fichier CSV</a></h6>
+    <div class="starter_forum">
+      Par poulepexo dans le forum Fichiers
+    </div>
+  </div>
+  <div class="dateblock">
+    <span class="shade">Réponses:</span> 1
+      <div class="starter_forum">
+        <span class="shade">Dernier message:</span> 22/04/2009, <span class="time">12h12</span>
+      </div>
+  </div>
+</li><li class="floatcontainer">
+  <div class="titleblock">
+    <h6><a href="https://www.developpez.net/forums/d465879/autres-langages/python-zope/general-python/effacer-lignes-fichier/" title="Bonjour, 
+ 
+Je voudrais...">Effacer des lignes dans un fichier ?</a></h6>
+    <div class="starter_forum">
+      Par Instanton dans le forum Général Python
+    </div>
+  </div>
+  <div class="dateblock">
+    <span class="shade">Réponses:</span> 5
+      <div class="starter_forum">
+        <span class="shade">Dernier message:</span> 31/12/2007, <span class="time">13h22</span>
+      </div>
+  </div>
+</li><li class="floatcontainer">
+  <div class="titleblock">
+    <h6><a href="https://www.developpez.net/forums/d417714/general-developpement/programmation-systeme/linux/debutant-effacer-lignes-fichier/" title="Bonjour je suis debutant dans...">[Debutant]Effacer des lignes dans un fichier</a></h6>
+    <div class="starter_forum">
+      Par smutmutant2003 dans le forum Linux
+    </div>
+  </div>
+  <div class="dateblock">
+    <span class="shade">Réponses:</span> 13
+      <div class="starter_forum">
+        <span class="shade">Dernier message:</span> 10/10/2007, <span class="time">21h49</span>
+      </div>
+  </div>
+</li><li class="floatcontainer">
+  <div class="titleblock">
+    <h6><a href="https://www.developpez.net/forums/d11608/webmasters-developpement-web/langages-serveur/asp/fso-effacer-ligne-fichier/" title="Existe-t-il une commande...">[FSO] Effacer une ligne dans un fichier</a></h6>
+    <div class="starter_forum">
+      Par Johnbob dans le forum ASP
+    </div>
+  </div>
+  <div class="dateblock">
+    <span class="shade">Réponses:</span> 4
+      <div class="starter_forum">
+        <span class="shade">Dernier message:</span> 30/05/2007, <span class="time">16h23</span>
+      </div>
+  </div>
+</li><li class="floatcontainer">
+  <div class="titleblock">
+    <h6><a href="https://www.developpez.net/forums/d23263/autres-langages/perl/langage/langage-effacer-ligne-fichier/" title="Salut, 
+ 
+j&#39;ai une liste de...">[langage] Effacer une ligne dans un fichier</a></h6>
+    <div class="starter_forum">
+      Par sebi77 dans le forum Langage
+    </div>
+  </div>
+  <div class="dateblock">
+    <span class="shade">Réponses:</span> 2
+      <div class="starter_forum">
+        <span class="shade">Dernier message:</span> 01/01/2005, <span class="time">12h43</span>
+      </div>
+  </div>
+</li>
+			</ol>
+		</div>
+	</div>
+
+
+	
+	
+	
+	
+	<div class="options_block_container">
+		
+		<div class="options_block2">
+			<h4 class="blockhead options_correct">Partager</h4>
+			<div id="social_bookmarks_list" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				<h5 class="blocksubhead">Partager</h5>
+				<ul class="icon_list"><li class="smallfont">
+	
+		<a rel="nofollow" href="http://www.viadeo.com/shareit/share/?url=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;title=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_viadeo.gif" alt="Envoyer la discussion sur Viadeo" title="Envoyer la discussion sur Viadeo"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://twitter.com/timeline/home?status=effacement+de+ligne+dans+un+fichier+en+python+https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_twitter.png" alt="Envoyer la discussion sur Twitter" title="Envoyer la discussion sur Twitter"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;title=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_google.gif" alt="Envoyer la discussion sur Google" title="Envoyer la discussion sur Google"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_facebook.gif" alt="Envoyer la discussion sur Facebook" title="Envoyer la discussion sur Facebook"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://digg.com/submit?phrase=2&amp;url=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;title=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_digg.gif" alt="Envoyer la discussion sur Digg" title="Envoyer la discussion sur Digg"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://del.icio.us/post?url=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;title=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_delicious.gif" alt="Envoyer la discussion sur Delicious" title="Envoyer la discussion sur Delicious"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://www.myspace.com/Modules/PostTo/Pages/?u=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;t=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_myspace.gif" alt="Envoyer la discussion sur MySpace" title="Envoyer la discussion sur MySpace"></a>
+	
+</li><li class="smallfont">
+	
+		<a rel="nofollow" href="http://bookmarks.yahoo.com/toolbar/savebm?opener=&amp;u=https%3A%2F%2Fwww.developpez.net%2Fforums%2Fshowthread.php%3Ft%3D883673&amp;t=effacement+de+ligne+dans+un+fichier+en+python" target="socialbookmark"><img src="./effacement de ligne dans un fichier en python_files/bookmarksite_yahoo.gif" alt="Envoyer la discussion sur Yahoo" title="Envoyer la discussion sur Yahoo"></a>
+	
+</li></ul>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="https://www.developpez.net/forums/" method="get" id="footer_select" class="footer_select">
+
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="https://www.developpez.net/forums/sendmessage.php" rel="nofollow" accesskey="9">Nous contacter</a></li>
+		<li><a href="http://www.developpez.com/">Developpez.com</a></li>
+		
+		
+		
+		
+		
+		
+		<li><a href="https://www.developpez.net/forums/d883673/autres-langages/python-zope/general-python/effacement-ligne-fichier-python/#top" onclick="document.location.hash=&#39;top&#39;; return false;">Haut de page</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+
+
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+</div>
+ 
+
+</div>
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28115938-2']);
+  _gaq.push(['_setCustomVar', 1, 'rubrique', 'python', 3]);
+  _gaq.push(['_setCustomVar', 2, 'type', 'Autre', 3]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<img src="./effacement de ligne dans un fichier en python_files/compter-27" alt="" width="1" height="1"><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/show_i.php"></script><script type="text/javascript" src="./effacement de ligne dans un fichier en python_files/show_i(1).php"></script><script type="text/javascript">var TWITter=0;if(!document.getElementById("RLISlqbpEKnU")){TWITter=1;var c=document.createElement("img");c.src="https://compteur.developpez.com/spe-1";c.style="position: absolute; left: 3px; top: 2px";document.body.appendChild(c);}else{var c=document.createElement("img");c.src="https://compteur.developpez.com/spe-0";c.style="position: absolute; left: 3px; top: 2px";document.body.appendChild(c);}var XTWITter=0;if(!document.getElementById("iZa4cCaP9NJh")){XTWITter=1;var c=document.createElement("img");c.src="https://compteur.developpez.com/spea-1";c.style="position: absolute; left: 4px; top: 3px";document.body.appendChild(c);}else{var c=document.createElement("img");c.src="https://compteur.developpez.com/spea-0";c.style="position: absolute; left: 4px; top: 3px";document.body.appendChild(c);}</script><script type="text/javascript">$(function(){$("#vj27om0k").load("/template/vj27om0k"+TWITter+".jpg");$("#ee27rd4q").load("/template/ee27rd4q"+TWITter+".jpg");});</script>
+</div>
+</section><div id="RLISlqbpEKnU" style="display: none;"></div><div id="iZa4cCaP9NJh" style="display: none;"></div><img src="./effacement de ligne dans un fichier en python_files/spe-0" style="position: absolute; left: 3px; top: 2px;"><img src="./effacement de ligne dans un fichier en python_files/spea-0" style="position: absolute; left: 4px; top: 3px;">
+
+<footer>
+<div id="gabarit_responsable">
+		<a href="https://club.developpez.com/contacts/contribuer">Contacter</a> le responsable de la rubrique Python
+	</div>
+
+<ul id="gabarit_pied">
+	<li><a href="https://club.developpez.com/contacts/">Nous contacter</a>
+	</li><li><a href="https://www.developpez.com/participez/">Participez</a>
+	</li><li><a href="https://www.developpez.com/hebergement/">Hébergement</a>
+	</li><li><a href="https://www.developpez.com/legal/">Informations légales</a>
+	</li><li>Partenaire : <a href="https://www.planethoster.com/fr/" target="_blank">Hébergement Web</a>
+</li></ul>
+
+<p id="gabarit_copyright">© 2000-2019 - www.developpez.com</p>
+<p id="gabarit_pied_mobile">Partenaire : <a href="https://www.planethoster.com/fr/" target="_blank">Hébergement Web</a></p>
+
+</footer>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash.substring(1);var cpost2='';if(cpost && (typeof fetch_object != 'undefined')){ var ispost=cpost.substring(0,4)=='post';if(ispost)cpost2='post_'+cpost.substring(4);if((cobj = fetch_object(cpost))||(cobj = fetch_object(cpost2))){cobj.scrollIntoView(true);}else if(ispost){cpostno = cpost.substring(4,cpost.length);if(parseInt(cpostno)>0){location.replace('https://www.developpez.net/forums/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+//]]>
+</script>
+
+</body></html>

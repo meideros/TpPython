@@ -1,0 +1,470 @@
+/************************************************************/
+/***** BANNIERE EMPLOI BY ATOMYA RISE ***********************/
+/************************************************************/
+
+.banner { position: relative; text-align:left; }
+
+#banner160 { width:160px; height:600px; }
+#banner300600 { width:300px; height:600px; }
+#banner300 { width:300px; height:250px; }
+#banner600 { width:600px; height:200px; }
+#banner728 { width:728px; height:90px; }
+
+#banner160 .banniere,
+#banner300600 .banniere,
+#banner300 .banniere,
+#banner600 .banniere,
+#banner728 .banniere { position:absolute; top:0; left:0; width:inherit; height:inherit; cursor:pointer;}
+
+#banner160.bx3 .banniere,
+#banner300600.bx3 .banniere,
+#banner300.bx3 .banniere,
+#banner600.bx3 .banniere,
+#banner728.bx3 .banniere { cursor:default; }
+
+/* APPLICATION THEME FORUM */
+#banner160.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-standard-unique.png') no-repeat center center; }
+#banner160.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-pastel-unique.png') no-repeat center center; }
+#banner160.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-sombre-unique.png') no-repeat center center; }
+
+#banner300.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-standard-unique.png') no-repeat center center; }
+#banner300.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-pastel-unique.png') no-repeat center center; }
+#banner300.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-sombre-unique.png') no-repeat center center; }
+
+#banner300600.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-standard-unique.png') no-repeat center center; }
+#banner300600.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-pastel-unique.png') no-repeat center center; }
+#banner300600.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-sombre-unique.png') no-repeat center center; }
+
+#banner728.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-standard-unique.png') no-repeat center center; }
+#banner728.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-pastel-unique.png') no-repeat center center; }
+#banner728.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-sombre-unique.png') no-repeat center center; }
+
+#banner600.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-standard-unique.png') no-repeat center center; }
+#banner600.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-pastel-unique.png') no-repeat center center; }
+#banner600.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-sombre-unique.png') no-repeat center center; }
+
+#banner160.bx3.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-standard-multiple.png') no-repeat center center; }
+#banner160.bx3.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-pastel-multiple.png') no-repeat center center; }
+#banner160.bx3.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/160X600-sombre-multiple.png') no-repeat center center; }
+
+#banner300.bx3.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-standard-multiple.png') no-repeat center center; }
+#banner300.bx3.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-pastel-multiple.png') no-repeat center center; }
+#banner300.bx3.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X250-sombre-multiple.png') no-repeat center center; }
+
+#banner300600.bx3.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-standard-multiple.png') no-repeat center center; }
+#banner300600.bx3.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-pastel-multiple.png') no-repeat center center; }
+#banner300600.bx3.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/300X600-sombre-multiple.png') no-repeat center center; }
+
+#banner728.bx3.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-standard-multiple.png') no-repeat center center; }
+#banner728.bx3.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-pastel-multiple.png') no-repeat center center; }
+#banner728.bx3.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/728X90-sombre-multiple.png') no-repeat center center; }
+
+#banner600.bx3.standard .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-standard-multiple.png') no-repeat center center; }
+#banner600.bx3.pastel .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-pastel-multiple.png') no-repeat center center; }
+#banner600.bx3.sombre .banniere { background: transparent url('https://www.developpez.com/images/dvp/emploi/600X200-sombre-multiple.png') no-repeat center center; }
+
+/* CLIC BANNIERE */
+a.banClicTotal { position:absolute; left:-4px;  cursor:pointer; z-index:2; }
+a.banClicTotal:hover { background-color: #15385c1a; }
+#banner160 a.banClicTotal,
+#banner300600 a.banClicTotal { top:-32px; left:-5px; height:600px; }
+#banner160 a.banClicTotal { width:160px; }
+#banner300600 a.banClicTotal { width:300px; }
+#banner300 a.banClicTotal { top:-30px; width:300px; height:250px; }
+#banner600 a.banClicTotal { top:-30px; width:600px; height: 200px; }
+#banner728 a.banClicTotal { top:-4px; left:-29px; width:728px; height:90px; }
+
+/* CONTENU */
+.contenu {
+	position:absolute;
+	left: 4px;
+	background-color: transparent !important;
+	color: #263F4F;
+	text-align: left;
+}
+
+#banner160 .contenu,
+#banner300600 .contenu { top:32px; left:5px; height: 563px; text-align:center; }
+#banner160 .contenu { width: 151px; }
+#banner300600 .contenu { width:290px; }
+
+#banner300 .contenu,
+#banner600 .contenu { top:30px; }
+#banner300 .contenu { width: 292px; height: 216px; }
+#banner600 .contenu { width: calc(100% - 8px); height: calc(100% - 34px); }
+
+#banner728 .contenu { top: 4px; left: 29px; width: calc(100% - 34px); height: calc(100% - 8px); }
+
+#banner160.bx3 .contenu,
+#banner300600.bx3 .contenu,
+#banner300.bx3 .contenu,
+#banner600.bx3 .contenu { top:28px; }
+
+#banner160.bx3 .contenu,
+#banner300600.bx3 .contenu { left:4px; text-align: center; }
+#banner160.bx3 .contenu { width:152px; height:569px; }
+#banner300600.bx3 .contenu { width:293px; height:568px; }
+#banner300.bx3 .contenu { width:292px; height:218px; }
+#banner600.bx3 .contenu { height: calc(100% - 32px); }
+#banner728.bx3 .contenu { left:28px; width: calc(100% - 32px); }
+
+/* LES INFOS */
+.informations {
+	position:relative;
+	z-index:1;
+	width:calc(100% - 10px);
+	height:calc(100% - 10px);
+	padding: 5px;
+	display:flex;
+    flex-direction: column;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+#banner728 .informations { padding:5px 10px; width:calc(100% - 20px); }
+#banner160.bx3 .informations,
+#banner300600.bx3 .informations { height: calc(100% - 10px); }
+#banner300600.bx3 .informations { width: calc(100% - 20px); padding:5px 10px; }
+
+#banner160 .bannerX3 div,
+#banner300600 .bannerX3 div,
+#banner300 .bannerX3 div,
+#banner600 .bannerX3 div { display:flex; flex-direction: column; justify-content: center; }
+
+#banner160 .bannerX3 div:nth-child(2) { border-top:1px solid #718999; border-bottom:1px solid #718999; }
+#banner300600 .bannerX3 div:nth-child(2) { border-top:1px solid #718999; border-bottom:1px solid #718999; }
+
+#banner160 .bannerX3 div,
+#banner300600 .bannerX3 div,
+#banner300 .bannerX3 div,
+#banner600 .bannerX3 div { height: calc(100% / 3); }
+
+#banner160 .bannerX3 div:nth-child(1) { align-content:stretch; }
+#banner300600 .bannerX3 div:nth-child(1) { align-content:stretch; }
+#banner300 .bannerX3 div:nth-child(1),
+#banner600 .bannerX3 div:nth-child(1) { align-content:baseline; }
+
+#banner160 .bannerX3 div:nth-child(3) { align-content:stretch; }
+#banner300600 .bannerX3 div:nth-child(3) { align-content:stretch; }
+#banner300 .bannerX3 div:last-child,
+#banner600 .bannerX3 div:nth-child(3) { align-content:end; }
+
+.banner_info { color:#5A7F97; font: normal 9pt Arial,sans-serif; margin:0; padding:0; letter-spacing:1px; }
+.banner_info[role='lienDansTitre'] { margin-left: 4px; }
+
+#banner300 .bannerX3 p.banner_info span { margin-left:5px; }
+
+p[role='societeLien'] a,
+span[role='lienDansTitre'] a { text-transform:uppercase; }
+
+#banner160 .bannerX3 p[role='societeLien'],
+#banner300600 .bannerX3 p[role='societeLien'],
+#banner160 .bannerX3 div:last-child p[role='societeLien'],
+#banner300600 .bannerX3 div:last-child p[role='societeLien'] { padding:0; margin:0; text-transform:uppercase; }
+
+p[role='titre'] { padding: 0; margin: 0; font: bold 14pt Arial,sans-serif; color: #263F4F; word-wrap: break-word; width: 100%; letter-spacing:2px;  }
+.bannerX3 p[role='titre'] { font-size:12pt; letter-spacing:1px; }
+
+#banner160 p[role='titre'] { font-size:12pt; }
+#banner300600 p[role='titre'] { font-size:18pt; }
+#banner300600 .bannerX3 p[role='titre'] a { font-size:16pt; }
+
+#banner160 div p,
+#banner300600 div p { margin-top:0; margin-bottom:10px; }
+
+#banner160 .bannerX3 div p:not(:last-child),
+#banner300600 .bannerX3 div p:not(:last-child) { margin-top:0; margin-bottom:10px; }
+
+#banner728 .bannerX3 p[role='titre'] { margin: 3px 0 0; width: calc(100% + 90px); padding-bottom: 2px; }
+#banner728 .bannerX3 p[role='titre']:first-child { margin-top:-1px; }
+#banner600 .bannerX3 p[role='titre'],
+#banner728 .bannerX3 p[role='titre'] { overflow:hidden; white-space:nowrap; width: calc(100% - 10px); }
+#banner300 .bannerX3 p[role='titre'],
+#banner600 .bannerX3 p[role='titre'] { margin-bottom:2px; }
+#banner300 .bannerX3 p[role='titre'],
+#banner600 .bannerX3 p[role='titre'] { margin-top:0; }
+#banner300 .bannerX3 p[role='titre']:nth-child(n + 2) { margin-top: 0; }
+#banner600 .bannerX3 p[role='titre']:nth-child(n + 2) { margin-top: 8px; }
+
+#banner600 .bannerX3 p[role='societeLien'] { margin: 0 auto 0 20px; line-height:18px; }
+
+/* BANX3 LIENS */
+p[role='titre'] a:link,
+p[role='titre'] a:active,
+p[role='titre'] a:visited { font: bold 10pt Arial,sans-serif !important; color:#5A7F97 !important; text-decoration:none !important; }
+
+#banner160 .bannerX3 p[role='titre'] a:link,
+#banner160 .bannerX3 p[role='titre'] a:active,
+#banner160 .bannerX3 p[role='titre'] a:visited { font-size: 12pt; }
+
+#banner160 .bannerX3 p[role='titre'] a,
+#banner300600 .bannerX3 p[role='titre'] a,
+#banner300 .bannerX3 p[role='titre'] a { display:block; }
+
+.bannerX3 p[role='titre'] span a:link,
+.bannerX3 p[role='titre'] span a:active,
+.bannerX3 p[role='titre'] span a:visited,
+.bannerX3 p[role='societeLien'] a:link,
+.bannerX3 p[role='societeLien'] a:active,
+.bannerX3 p[role='societeLien'] a:visited { font: normal 9pt Arial,sans-serif !important; color:#5A7F97 !important; text-decoration:none !important; }
+
+#banner160 .bannerX3 p[role='societeLien'] a { font-size: 9pt !important; }
+#banner300 .bannerX3 p[role='societeLien'] a { font-size: 8pt !important; }
+
+p[role='titre'] a:hover,
+p[role='titre'] a:hover,
+p[role='titre'] a:hover { color:#395567 !important; text-decoration:none; }
+
+.bannerX3 p[role='titre'] span a:hover,
+.bannerX3 p[role='societeLien'] a:hover { text-decoration:underline; }
+
+/* BOUTON BANNER 600 */
+.boutonLien {
+	background: #293a4e;
+	-moz-border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	color: rgb(255,255,255) !important;
+	text-decoration:none !important;
+	font: normal 9pt Arial,sans-serif;
+	letter-spacing:1pt;
+	padding: 5px 10px 4px 12px;
+	border: 0;
+	cursor: pointer;
+}
+.boutonLien:first-child { margin-right: 5px; }
+.boutonLien:link, .boutonLien:active, .boutonLien:visited { text-decoration: none; }
+.boutonLien:hover { background: #394c63; color: rgb(255,255,255) !important; text-decoration: none !important; }
+p.btn { position:absolute; right:3px; bottom:10px; color:#243C47; margin: 0; font-size:1em; }
+
+/* LOCALISATION */
+#banner728 p[role='localisation'],
+#banner728 p[role='infosPoste'],
+#banner728 p[role='competencesRequises'],
+#banner728 p[role='description'] { margin:4px 0 0; }
+
+#banner728 .bannerX3 p[role='localisation'],
+#banner728 .bannerX3 p[role='infosPoste'],
+#banner728 .bannerX3 p[role='competencesRequises'] { margin:2px 0 0; }
+
+#banner160 p[role='localisation'] span.u_ville,
+#banner300600 p[role='localisation'] span.u_ville,
+#banner300 p[role='localisation'] span.u_ville,
+#banner600 p[role='localisation'] span.u_ville,
+#banner728 p[role='localisation'] span.u_ville { font-weight: bold; font-family:Arial,sans-serif; }
+
+/* METIER */
+p[role='metier'] {
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	word-wrap: break-word;
+}
+
+/* DESCRIPTION PROFIL */
+#banner160 p[role='description'] span { font-weight:bold; display:block; margin-bottom:4px; }
+#banner300600 p[role='description'] span { font-weight:bold; display:block; margin-bottom:4px; }
+
+/* LOGO / NOM SOCIETE */
+#banner160 .u_logo,
+#banner300600 .u_logo,
+#banner300 .u_logo,
+#banner600 .u_logo,
+#banner728 .u_logo { position:absolute; left: 0; width: 100%; height: 24px; white-space:nowrap; font-size:9pt; bottom:0; right:4px; color:#5b6f78; }
+
+#banner160 [role='u_logo'],
+#banner300600 [role='u_logo'] { width: 100%; white-space:nowrap; font-size:9pt; color:#5b6f78; }
+
+#banner160 .u_logo,
+#banner300600 .u_logo { top: 490px; }
+#banner300600 .u_logo { left:5px; }
+#banner300 .u_logo { top: 190px; }
+#banner600 .u_logo { top: 140px; }
+#banner728 .u_logo { top: 56px; }
+
+#banner160 .u_logo img,
+#banner300600 .u_logo img,
+#banner300 .u_logo img,
+#banner600 .u_logo img,
+#banner728 .u_logo img { max-width:80px; max-height:80px; position:absolute; right:4px; bottom:1px; }
+
+#banner160 [role='u_logo'],
+#banner300600 [role='u_logo'] { max-width:100%; max-height:80px; }
+
+#banner300 .u_logo img,
+#banner600 .u_logo img { right:0; bottom:-2px; }
+
+#banner160 .u_logo span,
+#banner300 .u_logo span,
+#banner600 .u_logo span,
+#banner728 .u_logo span {
+	position: inherit;
+	top:0;
+	left:0;
+	bottom:0;
+	right: 0;
+	line-height:24px;
+	color: #192C39;
+	background-color: none;
+	border: 0;
+	padding: 2px 5px;
+	letter-spacing:.1rem;
+	text-align:right;
+}
+#banner160 .u_logo span,
+#banner300600 .u_logo span { color:#192C39; }
+#banner160 .u_logo span { white-space:initial; font-size:9pt; text-align:left; }
+#banner300600 .u_logo span { font-size:12pt; }
+
+#banner160 [role='u_logo'],
+#banner300600 [role='u_logo'] { letter-spacing:2px; text-align:center; color:#192C39; white-space:initial; }
+
+
+/************************************************************/
+/***** DETERMINER CSS AVEC PHP ******************************/
+/************************************************************/
+
+.fs8, .fs8 a { font-size:8pt !important; }
+.fs9, .fs9 a { font-size:9pt !important; }
+.fs10, .fs10 a { font-size:10pt !important; }
+.fs11, .fs11 a { font-size:11pt !important; }
+.fs12, .fs12 a { font-size:12pt !important; }
+.fs13, .fs13 a { font-size:13pt !important; }
+.fs14, .fs14 a { font-size:14pt !important; }
+.fs15, .fs15 a { font-size:15pt !important; }
+.fs16, .fs16 a { font-size:16pt !important; }
+
+.ls1px { letter-spacing:1px !important; }
+
+
+/************************************************************/
+/***** THEME STANDARD ***************************************/
+/************************************************************/
+
+.standard .contenu { background-color: #51647980 !important; -webkit-box-shadow: inset 0px 0px 5px #4c5f76; box-shadow: inset 0px 0px 5px #4c5f76; }
+.standard .banner_info { color:#fff; text-shadow: 1px 1px 0 #293b4f; }
+.standard a.banClicTotal:hover { background-color: #1399f225 !important; }
+.standard p[role='u_logo'],
+.standard p[role='u_logo'] span,
+.standard .u_logo,
+.standard .u_logo span { color:#7FD4F8 !important; font-weight:bold; text-shadow: 1px 1px 0 #2a3842 !important; }
+
+.standard p[role='titre'],
+.standard p[role='titre'] a:active,
+.standard p[role='titre'] a:visited { color:#7fd4f8 !important; text-shadow: 1px 1px 0 #293b4f; }
+.standard p[role='titre'] span a:link,
+.standard p[role='titre'] span a:active,
+.standard p[role='titre'] span a:visited,
+
+.standard p[role='societeLien'] a:link,
+.standard p[role='societeLien'] a:active,
+.standard p[role='societeLien'] a:visited { color:#1F2C34 !important; }
+
+.standard.bx3 .contenu { background: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; }
+.standard .bannerX3 .banner_info { color:#293A4E; }
+.standard .bannerX3 p,
+.standard .bannerX3 span { text-shadow:none !important; }
+.standard .bannerX3 p[role='titre'] a:link,
+.standard .bannerX3 p[role='titre'] a:active,
+.standard .bannerX3 p[role='titre'] a:visited { color:#293A4E !important; }
+.standard .bannerX3 p[role='titre'] span a:link,
+.standard .bannerX3 p[role='titre'] span a:active,
+.standard .bannerX3 p[role='titre'] span a:visited,
+.standard .bannerX3 p[role='societeLien'] a:link,
+.standard .bannerX3 p[role='societeLien'] a:active,
+.standard .bannerX3 p[role='societeLien'] a:visited { color:#293A4E !important; }
+.standard .bannerX3 p[role='titre'] a:hover,
+.standard .bannerX3 p[role='titre'] a:hover,
+.standard .bannerX3 p[role='titre'] a:hover { color:#395567 !important;  }
+
+#banner160.standard .bannerX3 div:nth-child(2),
+#banner300600.standard .bannerX3 div:nth-child(2) { border-top: 1px solid #c2d3df; border-bottom: 1px solid #c2d3df; }
+
+/************************************************************/
+/***** THEME PASTEL *****************************************/
+/************************************************************/
+
+.pastel .contenu { background-color: #37516380 !important; -webkit-box-shadow: inset 0px 0px 2px #2e4250; box-shadow: inset 0px 0px 2px #2e4250; }
+.pastel .banner_info { color:#fff; text-shadow: 1px 1px 0 #425f72; }
+.pastel a.banClicTotal:hover { background-color: #15385c40 !important; text-shadow:1px 1px 0 #2d627c !important; }
+.pastel p[role='u_logo'] span,
+.pastel .u_logo span { color:#192C39; font-weight:bold; text-shadow: 1px 1px 0 #637e90; }
+
+.pastel p[role='titre'],
+.pastel p[role='titre'] a:active,
+.pastel p[role='titre'] a:visited { color:#7fd4f8 !important; text-shadow: 1px 1px 0 #676767; }
+.pastel p[role='titre'] span a:link,
+.pastel p[role='titre'] span a:active,
+.pastel p[role='titre'] span a:visited,
+
+.pastel p[role='societeLien'] a:link,
+.pastel p[role='societeLien'] a:active,
+.pastel p[role='societeLien'] a:visited { color:#1F2C34 !important; }
+
+.pastel.bx3 .contenu { background: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; }
+.pastel .bannerX3 .banner_info { color:#5A7F97; }
+.pastel .bannerX3 p,
+.pastel .bannerX3 span { text-shadow:none !important; }
+.pastel .bannerX3 p[role='titre'] a:link,
+.pastel .bannerX3 p[role='titre'] a:active,
+.pastel .bannerX3 p[role='titre'] a:visited { color:#5A7F97 !important; }
+.pastel .bannerX3 p[role='titre'] span a:link,
+.pastel .bannerX3 p[role='titre'] span a:active,
+.pastel .bannerX3 p[role='titre'] span a:visited,
+.pastel .bannerX3 p[role='societeLien'] a:link,
+.pastel .bannerX3 p[role='societeLien'] a:active,
+.pastel .bannerX3 p[role='societeLien'] a:visited { color:#5A7F97 !important; }
+.pastel .bannerX3 p[role='titre'] a:hover,
+.pastel .bannerX3 p[role='titre'] a:hover,
+.pastel .bannerX3 p[role='titre'] a:hover { color:#395567 !important;  }
+
+#banner160.pastel .bannerX3 div:nth-child(2),
+#banner300600.pastel .bannerX3 div:nth-child(2) { border-top: 1px solid #c1d4e1; border-bottom: 1px solid #c1d4e1; }
+
+.pastel .boutonLien { background: #5a7f97; }
+.pastel .boutonLien:hover { background: #47667b; }
+
+/************************************************************/
+/***** THEME SOMBRE *****************************************/
+/************************************************************/
+
+.sombre .contenu { background-color: #15151580 !important; -webkit-box-shadow: inset 0px 0px 5px #272727; box-shadow: inset 0px 0px 5px #272727; }
+.sombre .banner_info { color:#fff; text-shadow: 1px 1px 0 #2d2d2d; }
+.sombre a.banClicTotal:hover { 	background-color: #0000003b !important; }
+.sombre p[role='u_logo'],
+.sombre p[role='u_logo'] span,
+.sombre .u_logo,
+.sombre .u_logo span { color:#e2e791 !important; font-weight:bold; text-shadow: 1px 1px 0 #202020 !important; }
+
+.sombre p[role='titre'],
+.sombre p[role='titre'] a:active,
+.sombre p[role='titre'] a:visited { color:#e2e791 !important; text-shadow: 1px 1px 0 #202020; }
+.sombre p[role='titre'] span a:link,
+.sombre p[role='titre'] span a:active,
+.sombre p[role='titre'] span a:visited,
+
+.sombre p[role='societeLien'] a:link,
+.sombre p[role='societeLien'] a:active,
+.sombre p[role='societeLien'] a:visited { color:#1F2C34 !important; }
+
+.sombre.bx3 .contenu { background: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; }
+.sombre .bannerX3 .banner_info { color:#585858; }
+.sombre .bannerX3 p,
+.sombre .bannerX3 span { text-shadow:none !important; }
+.sombre .bannerX3 p[role='titre'] a:link,
+.sombre .bannerX3 p[role='titre'] a:active,
+.sombre .bannerX3 p[role='titre'] a:visited { color:#585858 !important; }
+.sombre .bannerX3 p[role='titre'] span a:link,
+.sombre .bannerX3 p[role='titre'] span a:active,
+.sombre .bannerX3 p[role='titre'] span a:visited,
+.sombre .bannerX3 p[role='societeLien'] a:link,
+.sombre .bannerX3 p[role='societeLien'] a:active,
+.sombre .bannerX3 p[role='societeLien'] a:visited { color:#585858 !important; }
+.sombre .bannerX3 p[role='titre'] a:hover,
+.sombre .bannerX3 p[role='titre'] a:hover,
+.sombre .bannerX3 p[role='titre'] a:hover { color:#313131 !important;  }
+
+#banner160.sombre .bannerX3 div:nth-child(2),
+#banner300600.sombre .bannerX3 div:nth-child(2) { border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; }
+
+.sombre .boutonLien { background: #4e4e4e; }
+.sombre .boutonLien:hover { background: #383737; }
